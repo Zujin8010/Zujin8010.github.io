@@ -10,9 +10,7 @@ ul {
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
   }
-*{
-    width:1920px;
-}
+
 .part2{
     padding:20px;
 }
