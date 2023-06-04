@@ -1,0 +1,244 @@
+h2{
+    font-size:40px;
+    color:rgb(50, 50, 50)
+}
+h3{
+    color:rgb(60, 179, 239);
+}
+.header {
+    background-color:rgb(26, 26, 26);
+    color: white;
+    text-decoration: none;
+}
+
+.top {
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header .top .tele_logo {
+    font-size: 26px;
+
+    background-color: rgb(26, 26, 26);
+}
+.tele_logo a:hover{
+    color:orange;
+    transition:1s ;
+}
+.header .top .littlelogo {
+    background-color: white;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    background-color: white;
+    border: 4px solid  transparent;
+    display: flex;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+
+.Anilove_logo {
+    display: inline;
+    border: 4px solid transparent;
+    align-content: center;
+    font-size: 55px
+}
+
+nav {
+    width: 60%;
+    font-size: 35px;
+    /* border: 4px solid yellow; */
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a {
+    
+    font-size:20px;
+    color:black;
+    text-decoration: none;
+    align-items: center;
+    justify-content:space-between ;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
+.menubtn{
+    margin:10px 50px;
+    padding:20px 50px;
+    text-decoration: none;
+    border:2px solid orange;
+    color:orange;
+}
+.menubtn:hover{
+    background-color: rgb(113, 216, 237);
+    color: white;
+    border:1px solid rgb(113, 216, 237);
+    transition:background-color 1s ease;
+}
+.orangebtn{
+    width:fit-content;
+    height:40px;
+    padding:30px 10px 10px 10px;
+    
+    align-items: center;
+    background-color: orange;
+    display:inline-block;
+    
+    border:1px solid black;
+    text-decoration: none;
+    color:white;
+    
+}
+.orangebtn:hover{
+    background-color: black;
+    transition:.5s;
+}
+.text{
+    width:50%;
+}
+.block{
+    width:50%;
+}
+.cat {
+    width: 100%;
+    height: 500px;
+    background-image: url(icon/catandball.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 4px solid blue; */
+    display:flex;
+    flex-direction: column;
+}
+.cat h2{
+    width:100%;
+    height:50px;
+    padding:100px 0px 0px 5px;
+    /* border:3px solid black; */
+    justify-content: center;
+    position:relative;
+    right:1px;
+}
+.cat h3{
+    font-size:70px;
+    margin:10px 0px 10px 5px ;
+}
+.cat p{
+    padding:5px 0px 20px 5px;
+    font-size:20px;
+}
+
+.womandog {
+    width: 100%;
+    height: 500px;
+    background-image: url(icon/womananddog.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 4px solid green; */
+    display:flex;
+}
+.womandog h2{
+    padding:70px 0px 10px 5px;
+}
+.womandog h3{
+    font-size:30px;
+}
+.womandog p{
+    padding :40px 0px 20px 5px;
+}
+
+}
+.howyoucan {
+    width: 100%;
+    height: 720px;
+    background-color: #86e3d7;
+    border: 4px solid orange;
+    flex-wrap: wrap;
+
+}
+.howyoucan>h2{
+    font-size:60px;
+    text-align: center;    
+}
+.howyoucan>h3{
+    font-size:30px;
+    margin:10px;
+    text-align:center;
+}
+.pic{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+    
+    
+}
+.pic a{
+    text-decoration: none;
+    color:white;
+    ;
+}
+.pic a:hover{
+    color: orange;
+    transition: 1s ease;
+    
+}
+
+
+.howyoucan .pic .volunteer
+{
+    background-image: url(/Anilove/icon/sleepcat.jpeg);
+    border: 1px solid red;
+    width: 300px;
+    height:400px;
+    margin:10px;
+    text-align: center;
+    font-size:34px;
+    
+}
+.howyoucan .pic .adopt
+{
+    background-image: url(/Anilove/icon/girl.jpeg);
+    border: 1px solid red;
+    width: 300px;
+    height:400px;
+    margin:10px;
+    text-align: center;
+    font-size:34px;
+}
+.howyoucan .pic .sponsor
+{
+    background-image: url(/Anilove/icon/womanandcat.jpeg);
+    border: 1px solid red;
+    width: 300px;
+    height:400px;
+    margin:10px;
+    text-align: center;
+    font-size:34px;
+    align-items: center;
+    justify-content: center;
+    
+}
