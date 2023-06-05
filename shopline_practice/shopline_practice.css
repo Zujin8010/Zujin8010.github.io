@@ -11,8 +11,14 @@ ul {
     margin-left: -1em; /* Also needed for space (tweak if needed) */
   }
 
-.part2{
+.part{
     padding:20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.part:nth-child(even){
+    border:2px solid blue;
+    flex-direction:row;
 }
 h2{
     width:100%;
@@ -27,14 +33,17 @@ h2{
     background-color: #dad5d5;
 }
 .image{
-    width:800px;
+    width:50%;
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;
+    border:2px solid red;
 }
 .paragraph{
-    width:800px;
+    width:50%;
     display:flex;
     flex-wrap:wrap;
-    flex-direction:row;
+    flex-direction:column;
+    border:2px solid orange;
+
 }
