@@ -50,7 +50,29 @@ h3{
     /* border:2px solid orange; */
     padding: 20px 20px 20px 20px;
 }
-.p_title,.p_middle,.p_list.p_foot{
-    height:25%;
-    margin:10px;
+.p_title,.p_middle,.p_list,.p_foot{
+    height:20% 30% 30% 20%;
+    width:100%;
+    margin:5px;
+    /* outline:2px solid red; */
+}
+.p_list{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.p_list li{
+    
+    
+    width:100%;
+    margin:2px;
+    /* border:2px solid green; */
+}
+.morefunction{
+    display:flex;
+    flex-direction:column;
+}
+.morefunction .info{
+    display:flex;
+    flex-direction: row;
 }
