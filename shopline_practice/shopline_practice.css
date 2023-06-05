@@ -45,5 +45,5 @@ h2{
     flex-wrap:wrap;
     flex-direction:column;
     /* border:2px solid orange; */
-
+    padding: 20px 20px 20px 20px;
 }
