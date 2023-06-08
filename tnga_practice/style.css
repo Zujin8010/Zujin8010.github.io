@@ -1,0 +1,148 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-style:none;
+    background-size: contain;
+    width:100%;
+   
+}
+h1{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+}
+/* .titleOfParagraph{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    box-sizing: content-box;
+    
+} */
+.menu{
+    display:inline-block;
+    flex-wrap:wrap;
+}
+.onepart{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width:inherit;
+    outline:1px  solid red;
+    position: relative;
+    padding:50px;
+    
+}
+.redBlack{
+    width:357px;
+    vertical-align: top;
+    position:relative;
+    left:-100px;
+    z-index:1;
+}
+.red{
+    background-color: rgb(187,3,5);
+    color:white;
+    display:flex;
+}
+.red .number {
+    transform: rotate(90deg);
+    font-size:100px;
+    box-sizing: content-box;
+}
+.red .whiteword{
+    display:flex;
+    font-size:60px;
+    align-items: center;
+    justify-content: center;
+}
+.black{
+    background-color: black;
+    padding:20px 22px;
+    font-size:18px;
+}
+.black h2{
+    color:white;
+    margin:10px 10px 0px 5px;
+}
+.black h3{
+    color:rgb(171, 171, 171);
+    margin:0px 3px 10px 5px;
+}
+
+
+.grayBlock{
+    position:relative;
+    width:439px;
+    height:290px;
+    background-color: rgb(245,245,245);
+    top:30px;
+}
+.videopic{
+    width:695px;
+    background-size: contain;
+    display: flex;
+    position:relative;
+    top:-235px;
+}
+.ytbutton{
+    width:57px;
+    vertical-align: top;
+    position:relative;
+    right:50px;
+    box-sizing: content-box;
+    height:fit-content;
+}
+.grayinfo{
+    Width:682px;
+    background-color:#EEEEEE ;
+    padding:0px 15px 0px 15px;    
+    box-sizing: border-box;
+    position:absolute;
+    top:580px;
+    right:550px;
+    z-index:1;
+
+}
+.grayinfo h2{
+    color:rgb(225, 0, 0);
+    padding:1px;    
+    box-sizing: content-box;
+    display:flex;
+    position:relative;
+}
+.grayinfo h2::after{
+    content:'';
+    display:flex;
+    width:60%;
+    height:1px;
+    background-color: red;    
+    justify-content: center;
+    align-content: center;
+    top:15px;
+    left:5px;
+    position:relative;
+}
+
+.grayinfo h3{
+    background-color: black;
+    color:white;
+    width:fit-content;
+    padding:0px 0px;    
+    box-sizing:border-box;
+    margin:0px;
+    
+}
+.grayinfo h4{
+    font-weight:500;
+    box-sizing: border-box;
+    padding:0px 10px;
+    margin:5px;
+}

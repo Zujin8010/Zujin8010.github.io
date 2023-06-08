@@ -62,17 +62,25 @@ h3{
     flex-direction:row;
 }
 .p_list li{
-    
-    
     width:100%;
     margin:2px;
     /* border:2px solid green; */
 }
 .morefunction{
+    width:100%;
     display:flex;
     flex-direction:column;
 }
+.morefunction .m_paragraph h3{
+    text-align: center;
+}
 .morefunction .info{
-    display:flex;
-    flex-direction: row;
+    display: flex;
+}
+.morefunction .info .infopart{
+    width:30px;
+    flex-wrap:wrap;
+    flex-direction: column;
+    border:3px solid red;
+
 }
