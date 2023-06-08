@@ -32,7 +32,7 @@ h1{
     flex-wrap:wrap;
 } */
 .bigpart{
-    border:1px solid red;
+    
     display: block;
     flex-wrap: wrap;
     width:100%;
