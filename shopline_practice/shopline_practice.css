@@ -78,7 +78,7 @@ h3{
     display: flex;
 }
 .morefunction .info .infopart{
-    width:30px;
+    width:300px;
     flex-wrap:wrap;
     flex-direction: column;
     border:3px solid red;
