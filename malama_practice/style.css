@@ -35,7 +35,9 @@ body{
     display: flex;
     flex-direction:row;
 } */
-
+h1{
+    padding:3%;
+}
 .onepart{
     width:100%;
     /* border: 3px solid green;
