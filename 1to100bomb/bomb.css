@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.box{
+    width:40%;
+    margin:auto;
+    border:1px solid red;
+}
