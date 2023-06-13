@@ -17,14 +17,18 @@ body{
         display: flex;
         flex-direction:row;
     }
-    .part .important {
+    .onepart .part .important {
+        width:50%;
+    }
+    .onepart .part .lower{
         width:50%;
     }
     
-    .onepart .part:nth-child(odd){
+    /* css選取沒成功 */
+    .part:nth-child(odd){
         display:flex;
-        flex-direction: column-reverse;
-
+        flex-direction: row-reverse;
+        
     }
 }
 /* .part{
@@ -51,9 +55,24 @@ body{
     color:rgb(109, 107, 107);
     
 }
-h2{
+span{
+    font-weight: 100;
+    font-size:13px;
     color:black;
+    
 }
+
+.important p{
+    color:black;
+    font-weight: 600;
+    font-size:25px;
+}
+
+.important p:nth-of-type(2){
+    color:rgb(156, 156, 156);
+    font-size:13px;
+}
+
 .part .important img{
     width:100%;
     object-fit: cover;
@@ -61,6 +80,7 @@ h2{
 }
 .onepart .important{
     width:100%;
+    padding:10px 0px;
     /* border:2px solid purple;
     background-color: white; */
 }
@@ -81,6 +101,7 @@ h2{
     /* border:3px solid yellow; */
     box-sizing: border-box;
     flex-wrap:wrap;
+    padding:3% 0px;
     margin:0 5%;
     
 }
@@ -91,4 +112,10 @@ h2{
     width: 80%;
     box-sizing: border-box;
     object-fit: cover;
+    color:black;
+    font-weight: 700;
+}
+img{
+    border-radius: 5%;
+    vertical-align: top;
 }
