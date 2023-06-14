@@ -25,7 +25,7 @@ body{
     }
     
     /* css選取沒成功 */
-    .part:nth-child(odd){
+    .onepart:nth-child(odd) .part{
         display:flex;
         flex-direction: row-reverse;
         
