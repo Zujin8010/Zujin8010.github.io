@@ -1,6 +1,7 @@
 .container{
     width:90%;
     margin:auto;
+    
 }
 
 .card{
@@ -12,7 +13,8 @@
     border:3px solid black;
     overflow:hidden;
     flex-direction:row;
-    
+    text-align: center;
+    align-items: center;
 }
 .col-12{
     padding:.5%;
@@ -33,7 +35,8 @@ img{
 }
 .card-text{
     width:100%;
-    height:auto;
+    
+    
 }   
 .card-pic{
     width:100%;
