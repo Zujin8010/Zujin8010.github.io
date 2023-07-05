@@ -73,7 +73,8 @@
         const checkAnswerBtn = document.getElementById('checkAnswer')
         const inputDataDom = document.getElementById('inputData')
         const ulDom = document.getElementById('ul')
-
+        const alertDiv = document.getElementById('liveAlertPlaceholder')
+        
         // const alertTrigger = document.getElementById('liveAlertBtn')
         // if (alertTrigger) {
         //     alertTrigger.addEventListener('click', () => {
@@ -111,11 +112,15 @@
 
             }
             console.log(answerArray)
+            alertDiv.innerHTML='';
         })
         restartGameBtn.addEventListener('click', function () {
 
 
             initStatus()
+            alertDiv.innerHTML='';
+            ulDom.innerHTML=''
+            historyData=''
         })
         openAnswerBtn.addEventListener('click', function () {
             appendAlert('答案是' + answerArray.join(''), 'success')
@@ -133,7 +138,9 @@
         inputDataDom.addEventListener("keypress",function(event) {
             if(event.key ==="Enter"){
             checkDataFunction()
+            
             }
+            
         })
         //猜 的主邏輯
         function checkDataFunction() {
@@ -195,7 +202,7 @@
                 //開始遊戲 可以點選
                 startGameBtn.disabled = false
             }
-            inputDataDom
+            inputData.value ="";
         }
 
         const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
@@ -259,7 +266,7 @@
 
 
         //Function end---------
-
+        
 
 
     </script>
