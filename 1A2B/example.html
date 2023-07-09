@@ -52,7 +52,7 @@
             </div>
 
         </div>
-
+        
     </div>
 
     <script>
@@ -73,7 +73,7 @@
         const checkAnswerBtn = document.getElementById('checkAnswer')
         const inputDataDom = document.getElementById('inputData')
         const ulDom = document.getElementById('ul')
-        const alertDiv = document.getElementById('liveAlertPlaceholder')
+        // const alertDiv = document.getElementById('liveAlertPlaceholder')
         
         // const alertTrigger = document.getElementById('liveAlertBtn')
         // if (alertTrigger) {
@@ -112,13 +112,13 @@
 
             }
             console.log(answerArray)
-            alertDiv.innerHTML='';
+            liveAlertPlaceholder.innerHTML='';
         })
         restartGameBtn.addEventListener('click', function () {
 
 
             initStatus()
-            alertDiv.innerHTML='';
+            liveAlertPlaceholder.innerHTML='';
             ulDom.innerHTML=''
             historyData=''
         })
