@@ -23,7 +23,7 @@
         </div>
 
         <table class="table table-bordered">
-            <tbody>
+            <thead>
                 <tr class="table-danger">
                     <th scope="col">日</th>
                     <th scope="col">一</th>
@@ -33,6 +33,9 @@
                     <th scope="col">五</th>
                     <th scope="col">六</th>
                 </tr>
+            </thead>
+            <tbody>
+
             </tbody>
         </table>
 
@@ -54,25 +57,26 @@
                     <div class="modal-body">
                         <!---yyyy-mm-dd-->
                         <div class="input-group mb-3">
-                            <span class="input-group-text" >日期</span>
-                            <input type="text" class="form-control" id="add-addon1" placeholder="" aria-label="Username"
+                            <span class="input-group-text">日期</span>
+                            <input type="text" class="form-control" id="add-addon1" 
+                            data-index="" placeholder="" aria-label="Username"
                                 aria-describedby="basic-addon1">
                         </div>
                         <!--標題-->
                         <div class="input-group mb-3">
-                            <span class="input-group-text" >標題</span>
+                            <span class="input-group-text">標題</span>
                             <input type="text" class="form-control" id="add-addon2" placeholder="" aria-label="Username"
                                 aria-describedby="basic-addon1">
                         </div>
                         <!--內容-->
                         <div class="input-group mb-3">
                             <span class="input-group-text">內容</span>
-                            <input type="text" class="form-control"   id="add-addon3" placeholder="" aria-label="Username"
+                            <input type="text" class="form-control" id="add-addon3" placeholder="" aria-label="Username"
                                 aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >關閉</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
                         <button type="button" class="btn btn-primary" id="add-addon4">新增</button>
                     </div>
                 </div>
@@ -95,21 +99,21 @@
                     <div class="modal-body">
                         <!---yyyy-mm-dd-->
                         <div class="input-group mb-3">
-                            <span class="input-group-text" >日期</span>
-                            <input type="text" class="form-control"  id="edit-addon1" placeholder="" aria-label="Username"
-                                aria-describedby="basic-addon1">
+                            <span class="input-group-text">日期</span>
+                            <input type="text" class="form-control" id="edit-addon1" placeholder=""
+                                aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <!--標題-->
                         <div class="input-group mb-3">
-                            <span class="input-group-text" >標題</span>
+                            <span class="input-group-text">標題</span>
                             <input type="text" class="form-control" id="edit-addo2" placeholder="" aria-label="Username"
                                 aria-describedby="basic-addon1">
                         </div>
                         <!--內容-->
                         <div class="input-group mb-3">
-                            <span class="input-group-text" >內容</span>
-                            <input type="text" class="form-control" id="edit-addon3" placeholder="" aria-label="Username"
-                                aria-describedby="basic-addon1">
+                            <span class="input-group-text">內容</span>
+                            <input type="text" class="form-control" id="edit-addon3" placeholder=""
+                                aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -127,7 +131,7 @@
         crossorigin="anonymous"></script>
 
     <script>
-        
+
 
         const myModalAdd = new bootstrap.Modal('#addModal', {
             keyboard: false
@@ -139,7 +143,7 @@
         let today = new Date();
         let year = today.getFullYear();
         let month = today.getMonth();
-        
+
 
 
 
@@ -199,28 +203,68 @@
         // const editon4Btn = document.getElementById('edit-addon4')
 
         addon4Btn.addEventListener('click', function () {
-            
-            let key =(addon1DOM.value).split('-').join('')
+
+            let key = (addon1DOM.value).split('-').join('')
             console.log(key)
-            let obj ={
-                title : addon2DOM.value,
-                content : addon3DOM.value
+            let obj = {
+                title: addon2DOM.value,//不是innerTEXT
+                content: addon3DOM.value
             }
             //找loaclStorage
-            let dataArray=[]
-            let data =getLocalStorage(key)
-            if(data == null){
+            let dataArray = []
+            let data = getLocalStorage(key)
+            if (data == null) {
                 dataArray.push(obj)
-            }else{
+            } else {
                 dataArray = date
                 dataArray.push(obj)
             }
-            setLocalStorage(key,dataArray)
+            setLocalStorage(key, dataArray)
 
             myModalAdd.hide()
         })
         editon4Btn.addEventListener('click', function () {
-            
+            let editDate = editon1DOM.value.spilt('-').join('-')
+            let editTitle = editon2DOM.value
+            let editContent = editon3DOM.value
+
+            console.log(editDate)
+            console.log(editDate)
+            console.log(editDate)
+
+            //取得修改的index
+            let index = editon1DOM.getAttribute('data-index')
+            console.log(index)
+
+            let data = getLocalStorage(editDate)
+            console.log(data)
+
+            //把行程塞進物件
+            let obj = {
+                title :editTitle,
+                content : editContent
+            }
+            data[index]=obj
+
+            setLocalStorage(editDate,data)
+            myModalEdit.hide()
+            renderDate()
+
+
+
+        })
+        editon5Btn.addEventListener('click',function(){
+            let editDate = editon1DOM.value.split('-').join('-')
+            let index = editon1DOM.getAttribute('data-index')
+            let dat = getLocalStorage(editDate)
+
+            data.splice(index,1)
+            console.log(data)
+            setLocalStorage(editDate,data)
+
+            myModalEdit.hide()
+            renderDate()
+
         })
 
 
@@ -229,9 +273,10 @@
         }
 
         //function
-
+        
         function renderDate() {
 
+            tbodyDOM.innerHTML = ''
             //渲染
             yearMonthDOM.innerText = `${year}年${month + 1}月`
             //第一天 到底是 禮拜幾
@@ -264,7 +309,50 @@
 
                         if (day <= dateOfMonth) {
                             tdDOM.innerText = day
-                            tdDOM.addEventListener('click', tdClickFN.bind(null,year,month,day))
+
+                            //查詢日期是否有形成?
+                            let key = `${year}${month + 1}${day}` //因為Month從零開始
+
+
+                            let data = getLocalStorage(key)
+
+                            if (data != null) {
+                                let ulDOM = document.createElement('ul')
+                                //印出我的代辦事項
+
+                                //因為有index要抓 所以在item 後面新增index
+                                data.forEach(item => {
+                                    let liDOM = document.createElement('li')
+                                    console.log(item)
+                                    liDOM.innerText = item.title
+                                    //將資料放回ul裡面
+
+                                    //按下代辦事件的綁定
+                                    let editDay = day
+                                    liDOM.addEventListener('click', function (e) {
+                                        myModalEdit.show()
+                                        let editDate=`${year}-${month+1}-${editDay}`
+                                        console.log('editDate'+editDate)
+
+                                        editon1DOM.value = editDate
+                                        editon2DOM.value = item.title
+                                        editon3DOM.value = item.content
+                                        editon1DOM.setattribute('data-index',index)
+
+
+                                        e.stopPropgation()
+                                        //預設不寫是false
+                                    })
+
+
+                                    ulDOM.append(liDOM)
+                                });
+                                tdDOM.append(ulDOM)
+                            }
+
+
+
+                            tdDOM.addEventListener('click', tdClickFN.bind(null, year, month, day))
                             day++
                         } else {
                             tdDOM.innerText = "下個月日期"
@@ -279,22 +367,24 @@
                 tbodyDOM.append(trDOM)
             }
 
-            
+
 
         }
-        function tdClickFN(year,month,day) {
-            addon1DOM.value =`${year}-${month+1}-${day}`
+        function tdClickFN(year, month, day) {
+            addon1DOM.value = `${year}-${month + 1}-${day}`
             //取日期 寫到 Modal 的 input.value
             myModalAdd.show()
+            addon2DOM.value=''
+            addon3DOM.value=''
         }
         //取得LocalStorage的資料
-        function getLocalStorage(key){
+        function getLocalStorage(key) {
             return JSON.parse(localStorage.getItem(key))
-
+            //取得資料後 轉型帶入到DATA裡面
             return data
         }
-        function setLocalStorage(key,value){
-            localStorage.setItem(key,JSON.stringify(value)  )//放字串
+        function setLocalStorage(key, value) {//透過FUNCTION傳入資料後
+            localStorage.setItem(key, JSON.stringify(value))//放字串
         }
     </script>
 
