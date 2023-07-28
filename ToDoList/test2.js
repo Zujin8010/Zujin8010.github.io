@@ -32,11 +32,13 @@ function deleteTodo(index) {
     setTodosToLocaStorage(todos);
     renderTodos(); 
 }
+
+
 let isChecked
 function renderTodos() {
     const todoList = document.getElementById('todoList');
     todoList.innerHTML = '';
-
+    
     const todos = getTodosFromLocalStorage();
     todos.forEach((todo, index)=> {
         
@@ -85,3 +87,4 @@ function saveTodoText(index) {
     todos[index].todoItem = todoText; // 更新代辦事項的文字內容
     setTodosToLocaStorage(todos);
 }
+renderTodos()
