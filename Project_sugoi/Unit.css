@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    justify-content: center;
+}
+.product_body{
+    display:flex;
+}
+.body_main{
+    width:49%;
+}
+.body_sider{
+    width:49%;
+}
