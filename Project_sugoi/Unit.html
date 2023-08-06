@@ -7,11 +7,38 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="./Unit.css">
+    <link rel="stylesheet" href="./Unit.css">
 </head>
 
 <body>
     <header></header>
+
+    <nav id="navbar" class="navbar navbar-light bg-light px-3 ">
+        
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#productIntroduct">商品介紹</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#transAndOtherInfo">運費與其他資訊</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#buyerReview">購買評價</a>
+            </li>
+        </ul>
+        <ul class="navBtn">
+            <button class="collect"> <i class="fa-regular fa-heart"></i> 收藏商品</button>
+            <button class="cart"> <i class="fa-solid fa-cart-plus"></i> 放入購物車 </button>
+
+        </ul>
+    </nav>
+
+
+
+
+
+
+
     <div class="container">
         <div class="product_header">
             品味美食>飲品/沖泡類>咖啡/咖啡豆 新鮮食材
@@ -23,31 +50,435 @@
                         <img src="./image/bean.jpg" alt="">
                     </div>
                     <div class="photo_thumbs">
-                        <img src="./image/bean.jpg" alt="">
+                        <img src="./image/thumbBean.jpg" alt="">
+                        <img src="./image/thumbBean.jpg" alt="">
+                        <img src="./image/thumbBean.jpg" alt="">
+                        <img src="./image/thumbBean.jpg" alt="">
+                        <img src="./image/thumbBean.jpg" alt="">
+
                     </div>
-                </div>
-                <div class="main_detail">
-                    <h2>商品介紹</h2>
-                </div>
-                <div class="main_info">
-                    <h2>商品資訊</h2>
-                </div>
-                <div class="main_info">
-                    <h2>食品資訊</h2>
-                </div>
-                <div class="main_trans">
-                    <h2>運費與其他資訊</h2>
-                </div>
-                <div class="main_reviews">
-                    <h2>購買評價</h2>
+                    <div class="main_detail" id="productIntroduct">
+                        <h2>商品介紹</h2>
+                        <div class="discription">
+                            1. 選擇大一點的杯子，不要讓掛耳包在沖煮過程中泡在咖啡液中。
+                            <br>2. 研磨粗細、水粉比是最重要的參數，掛耳包已經固定了研磨粗細與粉量，因此「控制水量」是沖煮掛耳包最重要的事情。
+                            <br>3. 我們的研磨粗細是以「快速注水」為前提來設計的。
+                            <br>4. 直接快速注水到滿，大約會是100cc。等待水都過濾後，再次快速注水到滿，約略會是150~160cc。都過濾完之後就得到一杯好喝的Simple Kaffa 的咖啡了！
+                        </div>
+                        <div class="disPhoto">
+                            <img src="./image/dis1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="main_info">
+                        <h2>商品資訊</h2>
+                        <dl>
+                            <div class="info_list">
+                                <dt>商品材質</dt>
+                                <dd>新鮮食材</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>製造方式</dt>
+                                <dd>手工製造</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>商品產地</dt>
+                                <dd>台灣</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>商品特點</dt>
+                                <dd>得獎設計</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>庫存</dt>
+                                <dd>10件以上</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>商品排行</dt>
+                                <dd>NO.161-品味美食|NO.4 咖啡/咖啡豆</dd>
+                            </div>
+                            <div class="info_list proHot">
+                                <dt>商品熱門度</dt>
+                                <ul>
+                                    <li>被欣賞42,691次</li>
+                                    <li>已賣出561件商品</li>
+                                    <li>共604人收藏</li>
+                                </ul>
+                            </div>
+                            <div class="info_list">
+                                <dt>販售許可</dt>
+                                <dd>授權販售</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>授權經銷品牌</dt>
+                                <dd>Simple Kaffa 興波咖啡</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>商品摘要</dt>
+                                <dd>世界盃咖啡大師冠軍吳則霖嚴選製作 時時刻刻享受世界冠軍的咖啡 知名旅遊網站「Big 7 Travel」評鑑2019世界第一的咖啡廳 氮氣填充保鮮 堅持台灣現烘製作
+                                </dd>
+                            </div>
+
+                        </dl>
+                    </div>
+                    <div class="main_info">
+                        <h2>食品資訊</h2>
+                        <dl>
+                            <div class="info_list">
+                                <dt>賞味日期</dt>
+                                <dd>製造日後365天</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>過敏原</dt>
+                                <dd>無</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>保存方法</dt>
+                                <dd>常溫</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>內容物</dt>
+                                <dd>
+                                    【內容物成份】100%研磨咖啡 【生豆產地】巴西、哥倫比亞、衣索比亞 【產地】台灣 【內容量(重量)】12 ±0.5公克*30包 /組(口味任選，阿寶綜合*30包 /組
+                                    或 衣索比亞水洗*30包 /組 或 衣索比亞日曬*30包 /組 或 阿寶綜合*10包+衣索比亞水洗*10包+衣索比亞日曬*10包 /組) 【保存期限(總效期)】12個月
+                                    【備註】商品主圖僅供參考，實際出貨內容不包含紙盒</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>內容量</dt>
+                                <dd>12g x 30</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>廠商名稱</dt>
+                                <dd>興波事業有限公司</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>廠商電話</dt>
+                                <dd>+886233221888</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>廠商地址</dt>
+                                <dd>台北市中正區忠孝東路二段27號</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>食品業者登陸字號</dt>
+                                <dd>A-183587935-00000-6</dd>
+                            </div>
+                            <div class="info_list">
+                                <dt>投保產品責任險字號</dt>
+                                <dd>富邦1000萬0524字第22AML0001785號</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="main_trans" id="transAndOtherInfo">
+                        <h2 >運費與其他資訊</h2>
+                        <div class="info_list">
+                            <dt>商品運費</dt>
+                            <dd>從台灣(新北市)寄出,寄往:
+                                <div class="select">
+                                    <select name="fromWhere" id="fromWhere">
+                                        <option value="TW">台灣</option>
+                                        <option value="C">中國大陸</option>
+                                        <option value="HK">香港</option>
+                                        <option value="JP">日本</option>
+                                        <option value="US">美國</option>
+                                        <option value="CA">加拿大</option>
+                                        <option value="MO">澳門</option>
+                                    </select>
+                                    <select name="toWhere" id="toWhere">
+                                        <option value="null">請選擇地區</option>
+                                        <option value="">基隆市</option>
+                                        <option value="">台北市</option>
+                                        <option value="">新北市</option>
+                                        <option value="">桃園市</option>
+                                        <option value="">新竹市</option>
+                                        <option value="">新竹縣</option>
+                                        <option value="">苗栗縣</option>
+                                    </select>
+                                </div>
+                            </dd>
+                        </div>
+                        <!-- <div class="info_list">
+                            <dt></dt>
+                            <dd class="transList">
+                                <div class="dd_tran">運送方式</div>
+                                <div class="dd_price">首件運費</div>
+                                <div class="dd_plus">續件加收</div>
+                            </dd>
+                        </div>
+                        <div class="info_list tran_list">
+                            <dt></dt>
+                            <dd>
+                                <div class="tran_info">7-11取貨</div>
+                                <div class="tran_info">7-11取貨付款</div>
+                                <div class="tran_info">基本運送</div>
+                            </dd>
+                        </div> -->
+
+                        <div class="info_list upMark">
+                            <dt>付款方式</dt>
+                            <dd>信用卡安全加密付款</dd>
+                        </div>
+
+                        <div class="info_list upMark">
+                            <dt>退換貨須知</dt>
+                            <dd> <a href="">點我了解設計館的退款換貨須知</a> </dd>
+                        </div>
+
+                        <div class="info_list upMark">
+                            <dt>商品標籤</dt>
+                            <dd>
+                                <button>SimpleKafa</button>
+                                <button>掛耳包</button>
+                                <button>濾掛咖啡</button>
+                                <button>端午節</button>
+                                <button>興波咖啡</button>
+                                <button>衣索比亞日曬</button>
+                            </dd>
+                        </div>
+
+                        <div class="info_list upMark">
+                            <dt>問題回報</dt>
+                            <dd> <a href="">我要檢舉此商品</a> </dd>
+                        </div>
+
+                        <div class="info_list upMark">
+                            <dt>相關文章</dt>
+                            <dd> <a href="">[2023男朋友禮物]</a> </dd>
+                        </div>
+
+
+                        <!-- <div class="info_list">
+                            <dt></dt>
+                            <dd>轉帳付款</dd>
+                        </div>
+                        <div class="info_list">
+                            <dt></dt>
+                            <dd>7-11 ibon 代碼繳費</dd>
+                        </div>
+                        <div class="info_list">
+                            <dt></dt>
+                            <dd>全家 FamiPort代碼繳費</dd>
+                        </div>
+                        <div class="info_list">
+                            <dt></dt>
+                            <dd>LINE PAY</dd>
+                        </div>
+                        <div class="info_list">
+                            <dt></dt>
+                            <dd>AliPay支付寶</dd>
+                        </div>
+                        <div class="info_list">
+                            <dt></dt>
+                            <dd>AliPayHK 支付寶香港</dd>
+                        </div>
+                        <div class="info_list">
+                            <dt></dt>
+                            <dd>悠游付</dd>
+                        </div> -->
+
+
+                    </div>
+
+
+                    <div class="main_reviews">
+                        <h2 id="buyerReview">購買評價</h2>
+                        <div class="reviewButton_group">
+                            <button class="thisReview">本商品評價</button>
+                            <button class="allReview">品牌所有評價</button>
+                        </div>
+
+                        <div class="reviews_top">
+                            <div class="reviews">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="OneToFive">
+                                    <a href="#">5.0</a>
+                                </div>
+                                <div class="reviewers">
+                                    <a href="#">(172)</a>
+                                </div>
+
+                            </div>
+                            <div class="viewAllButton">
+                                <a href="">看本商品所有評價</a>
+                            </div>
+                        </div>
+                        <div class="reviews_small">
+                            <span>評價中附上的照片</span>
+                            <div class="small_img">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+                                <img src="./image/small1.jpg" alt="">
+
+                            </div>
+
+                        </div>
+
+                        <div class="reviews_buyer">
+                            <div class="reviews_block">
+                                <div class="reviews_name">
+                                    <div class="reviews_stickers">
+                                        <img src="./image/small2.jpg" alt="">
+                                    </div>
+                                    <div class="reviews_acount">rrrrrrr</div>
+                                </div>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="reviews_time">
+                                    5 days ago
+                                </div>
+                                <div class="reviews_img">This is a fake comment
+
+                                </div>
+                            </div>
+                            <div class="reviews_block">
+                                <div class="reviews_name">
+                                    <div class="reviews_stickers">
+                                        <img src="./image/small2.jpg" alt="">
+                                    </div>
+                                    <div class="reviews_acount">rrrrrrr</div>
+                                </div>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="reviews_time">
+                                    5 days ago
+                                </div>
+                                <div class="reviews_img">This is a fake comment
+
+                                </div>
+                            </div>
+                            <div class="reviews_block">
+                                <div class="reviews_name">
+                                    <div class="reviews_stickers">
+                                        <img src="./image/small2.jpg" alt="">
+                                    </div>
+                                    <div class="reviews_acount">rrrrrrr</div>
+                                </div>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="reviews_time">
+                                    5 days ago
+                                </div>
+                                <div class="reviews_img">This is a fake comment
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+
+
+
+
+
             <div class="body_sider">
                 <div class="side_info">
                     <h1 class="productTitle">Coffee Bean</h1>
+                    <div class="prodcut_reviews">
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="OneToFive">
+                            <a href="#">5.0</a>
+                        </div>
+                        <div class="reviewers">
+                            <a href="#">(172)</a>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="symbol">$</span>
+                        <span class="amount">1,250</span>
+                    </div>
+                    <div class="price_event">
+                        <i class="fa-regular fa-handshake"></i>
+                        <a href="#">享跨館結帳 滿額免運</a>
+                    </div>
+                    <div class="action">
+                        <div class="spec">
+                            <select name="spec" id="a_spec">
+                                <option value="_null">請選擇商品規格</option>
+                                <option value="">阿寶綜合30包</option>
+                                <option value="">衣索比亞水洗30包</option>
+                                <option value="">衣索比亞日曬30包</option>
+                                <option value="">阿寶綜合10包+衣索比亞水洗10包+衣索比亞日曬10包</option>
+                            </select>
+                        </div>
+                        <div class="quantity">
+                            <label>數量</label>
+                            <select name="quantity" id="a_quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10+">10+</option>
+                            </select>
+                            <span>部分規格商品剩最後 <span>2</span> 件</span>
+                        </div>
+                        <div class="shoppingCart">
+                            <button class="cart"> <i class="fa-sol  id fa-cart-plus"></i> 放入購物車 </button>
+                        </div>
+                        <div class="collection">
+                            <button class="collect"> <i class="fa-regular fa-heart"></i> 收藏商品</button>
+                        </div>
+                        <ul class="actNote">
+                            <li><i class="fa-solid fa-gift"></i>免費贈送電子賀卡,結帳完成後填寫
+                                <a href="">電子賀卡是甚麼?</a>
+                            </li>
+                            <li>付款後,從備貨到計出商品為3個工作天</li>
+                            <li>設計館提供統一發票或免用統一發票收據</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="side_promo">
                     <span>優惠活動</span>
+                    <ul class="promo_list">
+                        <li>免運優惠來瞜! 新會員7天內下單 幫你付運費,最高可摺運費NT$100</li>
+                        <li>此商品由(___)配送,購買<a href="">跨館合併結帳專區</a>商品,結帳滿 NT$990可享免運優惠 </li>
+                        <span class="moreText show">
+                            <li>(___)跨館專區 7-11 超商取貨免運：使用7-11 取貨付款、7-11 取貨，滿 NT$ 990 享免運</li>
+                            <li>跨館合併結帳滿額免運：在指定所在地使用指定幣別下單（台灣/新台幣），不限運送方式寄往台灣，滿 NT$ 1,500 享免運</li>
+                            <li>獎勵任務進行中，週週送 P Coins <a href="">簽到領取獎勵</a> </li>
+                            <span>多重優惠顯示，實際優惠折抵以購物車內的折抵金額為準</span>
+                        </span>
+                        <button class="moreButton">顯示更多優惠活動 <i class="fa-solid fa-chevron-down"></i></button>
+                    </ul>
                 </div>
                 <div class="side_brand">
                     <span>關於品牌</span>
@@ -62,6 +493,7 @@
                         <span>與此商品相似</span>
                         <a href="#">看更多</a>
                     </div>
+                    <button>看更多相似商品</button>
                 </div>
             </div>
         </div>
@@ -91,6 +523,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/985aa319bc.js" crossorigin="anonymous"></script>
+    <script src="./Unit.js"></script>
 </body>
 
 </html>
