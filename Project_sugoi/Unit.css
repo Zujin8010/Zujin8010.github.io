@@ -25,8 +25,17 @@
 .cart{
     background-color: #e56051;
     color:white;
+    width:100%;
 }
 .cart:hover{
+    background-color: #c9574b;
+}
+.cart2{
+    background-color: #e56051;
+    color:white;
+    width:auto
+}
+.cart2:hover{
     background-color: #c9574b;
 }
 .collect{
@@ -55,10 +64,14 @@
     display:flex;
     margin:1px;
 }
+.product_header a{
+    text-decoration-line: none;
+}
 
 .photo_wrapper img{
     margin:1%;
     max-width:100%;
+    width:800px;
     object-fit:cover;
     
 }
@@ -94,10 +107,12 @@
 .side_brand,.same_Company,.same_similar{
     border-top: 1px solid #d3d3d5;
 }
+
 .side_same button{
     background-color: white;
     border-radius:5px;
     min-width:240px;
+    
 }
 .side_same button:hover{
     background-color: rgb(197, 195, 195);

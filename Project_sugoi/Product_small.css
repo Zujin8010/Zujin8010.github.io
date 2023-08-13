@@ -1,0 +1,14 @@
+/* search */
+.form-input{
+    background: url(./image/Search_Icon.svg.png)no-repeat;
+    background-size:contain;
+    background-position: left;
+    background-origin: content-box;
+    text-indent:40px;
+    height:50px;
+}
+
+
+#carouselExampleInterval img{
+   height:220px;
+}
