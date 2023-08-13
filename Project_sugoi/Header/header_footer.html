@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+  </head>
+  <body>
+    <header class="homepage-main-header mt-4 mb-4">
+        <div class="container">
+          <!-- header-search列 -->
+          <div class="d-flex align-items-center">
+            <div class="logo"><a href="#"><img class="w-100" src="sugoiimg/Logo.svg" alt=""></a></div>
+            <div class="header-search me-auto">
+              <div class="header-search-form">
+                <form v-on:submit.prevent="search" class="d-flex " role="search">
+                  <input type="text" class="form-control" placeholder="搜尋好設計、商品" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                  <button class="btn btn-outline-secondary" type="submit">搜尋</button>
+                </form>
+              </div>
+              <div class="homepage-search-keyword">
+                <ul class="search-hot">
+                  <li class="search-hot-items"><a href="#">日本</a></li>
+                  <li class="search-hot-items"><a href="#">手作</a></li>
+                  <li class="search-hot-items"><a href="#">環保杯</a></li>
+                  <li class="search-hot-items"><a href="#">辦公室</a></li>
+                  <li class="search-hot-items"><a href="#">手錶</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-right-inner">
+              <a href="#">我想在Pinkoi上販售</a>
+              <button type="button" class="btn btn-outline-secondary">登入/註冊</button>
+              <a href=""><img src="sugoiimg/shopicon.svg" alt=""></a>
+              <a href=""><img src="sugoiimg/Pcoin.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <!-- 主題下拉選單 -->
+        <nav class="container homepage-category-nav-pc">
+          <div class="row dropdown-group">
+            <ul class="nav-group">
+              <li class="nav-items">
+                <a href="#">
+                  <h1>主題企劃</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">sugoi X 台北市立動物園 未來動物園</a></li>
+                  <li class="nav-items-container-category"><a href="#">sugoi 送禮指南 ｜ 生日、七夕、男友禮</a></li>
+                  <li class="nav-items-container-category"><a href="#">海外好設計｜夏日穿搭不撞款!</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>配件飾品</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">飾品</a></li>
+                  <li class="nav-items-container-category"><a href="#">頭飾</a></li>
+                  <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
+                  <li class="nav-items-container-category"><a href="#">手錶</a></li>
+                  <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
+                  <li class="nav-items-container-category"><a href="#">其他配件</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>包包提袋</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                  <li class="nav-items-container-category"><a href="#">日常包款</a></li>
+                  <li class="nav-items-container-category"><a href="#">錢包</a></li>
+                  <li class="nav-items-container-category"><a href="#">上班/通勤包</a></li>
+                  <li class="nav-items-container-category"><a href="#">收納包/行李箱</a></li>
+                  <li class="nav-items-container-category"><a href="#">其他包包提袋</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>居家生活</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                  <li class="nav-items-container-category"><a href="#">家飾佈置</a></li>
+                  <li class="nav-items-container-category"><a href="#">水壺/保溫瓶</a></li>
+                  <li class="nav-items-container-category"><a href="#">雜貨</a></li>
+                  <li class="nav-items-container-category"><a href="#">居家織品</a></li>
+                  <li class="nav-items-container-category"><a href="#">居家清潔</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>品味美食</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                  <li class="nav-items-container-category"><a href="#">飲品/沖泡類</a></li>
+                  <li class="nav-items-container-category"><a href="#">烘培食品</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>創意科技</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                  <li class="nav-items-container-category"><a href="#">手機平板週邊</a></li>
+                  <li class="nav-items-container-category"><a href="#">電腦週邊</a></li>
+                  <li class="nav-items-container-category"><a href="#">相機/影像器材</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>美妝保養</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">美妝保養夯話題</a></li>
+                  <li class="nav-items-container-category"><a href="#">保養品</a></li>
+                  <li class="nav-items-container-category"><a href="#">清潔用品</a></li>
+                  <li class="nav-items-container-category"><a href="#">化妝品</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>群眾募資</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">募資</a></li>
+                  <li class="nav-items-container-category"><a href="#">頭飾</a></li>
+                  <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
+                  <li class="nav-items-container-category"><a href="#">手錶</a></li>
+                  <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
+                  <li class="nav-items-container-category"><a href="#">其他配件飾品</a></li>
+                </ul>
+              </li>
+              <li class="nav-items"><a href="#">
+                  <h1>所有分類</h1>
+                </a>
+                <ul class="nav-items-container">
+                  <li class="nav-items-container-category"><a href="#">所有分類</a></li>
+                  <li class="nav-items-container-category"><a href="#">頭飾</a></li>
+                  <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
+                  <li class="nav-items-container-category"><a href="#">手錶</a></li>
+                  <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
+                  <li class="nav-items-container-category"><a href="#">其他配件飾品</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+
+
+
+      <footer>
+        <div class="container">
+            <div class="row border-bottom pb-3">
+                <div class="col-6 col-md-2">
+                    <ul>
+                        <h3>探索好設計</h3>
+                        <li>
+                            <a href="#">所有商品分類</a>
+                        </li>
+                        <li><a href="#">設計誌</a>
+                        </li>
+                        <li>
+                            <a href="#">跨館合併結帳專區</a>
+                        </li>
+                        <li>
+                            <a href="#">Sugoi禮物卡</a>
+                        </li>
+                        <li>
+                            <a href="#">Sugoi群眾募資</a>
+                        </li>
+                        <li>
+                            <a href="#">找靈感</a>
+                        </li>
+                        <li>
+                            <a href="#">逛櫥窗</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <ul>
+                        <h3>販售</h3>
+                        <li>
+                            <a href="#">我想在Sugoi販售</a>
+                        </li>
+                        <li><a href="#">我想提案群眾募資專案</a>
+                        </li>
+                        <li>
+                            <a href="#">設計館問與答</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <ul>
+                        <h3>幫助/政策</h3>
+                        <li>
+                            <a href="#">問與答</a>
+                        </li>
+                        <li><a href="#">大宗採購</a>
+                        </li>
+                        <li>
+                            <a href="#">訊息公告</a>
+                        </li>
+                        <li>
+                            <a href="#">服務條款</a>
+                        </li>
+                        <li>
+                            <a href="#">退貨政策</a>
+                        </li>
+                        <li>
+                            <a href="#">會員制度 & P Coins 回饋計畫</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <ul>
+                        <h3>認識Sugoi</h3>
+                        <li>
+                            <a href="#">關於我們</a>
+                        </li>
+                        <li><a href="#">媒體報導</a>
+                        </li>
+                        <li>
+                            <a href="#">全新Sugoi</a>
+                        </li>
+                        <li>
+                            <a href="#">人才招募</a>
+                        </li>
+                        <li>
+                            <a href="#">iichi.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="mb-4">追蹤Sugoi</h3>
+                    <div class="row icon-row">
+                        <div class="col-2">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-line fa-2xl"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-youtube fa-2xl"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-tiktok fa-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="mt-4">隨時掌握最新好設計</p>
+                </div>
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="pic">
+                        <img src="../pic/pinkoi_logo_2019.svg" alt="sugoi">
+                    </div>
+                    <div class="text ">
+                        <p>Design the way you are.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="rights-row d-flex justify-content-between align-items-center ">
+                        <div class="rights">
+                            © 2023 hatsukoi. All Rights Reserved.
+                        </div>
+                        <div class="language">
+                            <select name="homepage-lang-selector" id="lang-select">
+                                <option value="">中文</option>
+                                <option value="">English</option>
+                                <option value="">日本語</option>
+                                <option value="">한국어</option>
+                                <option value="">Bahasa Melayu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
