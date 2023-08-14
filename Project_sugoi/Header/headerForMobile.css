@@ -1,0 +1,102 @@
+.navbar-toggler {
+    order: -1;
+    margin-right: 10px;
+    border: none;
+}
+
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* Initially off-screen */
+    width: 80%;
+    /* Full width of the screen */
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+    border-right: 1px solid #ccc;
+    z-index: 1000;
+    transition: left 0.5s ease-in-out;
+    /* Transition for left property */
+}
+
+.navbar-collapse.show {
+    left: -100%;
+    /* Slide in from the left */
+}
+
+.navbar-collapse.show .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px
+}
+
+.header {
+    position: absolute;
+    justify-content: space-between;
+}
+
+.logo-sugoi {
+    left: -5%;
+    position: relative;
+}
+
+.search {
+    justify-content: center;
+    position: relative;
+    display: flex;
+
+}
+
+.searchTerm {
+    border-radius: 0.375rem;
+}
+
+.searchButton {
+    background-color: #f8f9fa;
+    border-style: none;
+}
+
+.search input {
+    width: 80%;
+}
+
+.recommend {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.recommend li {
+    list-style-type: none;
+}
+
+.recommend li a {
+    text-decoration: none;
+}
+.recommend li a:hover {
+    color:rgb(187, 187, 200);
+    transition: color 0.3s 
+}
+.navbar-collapse{
+    background-color: #f8f9fa;
+}
+.dropdown-menu{
+    background-color: #f8f9fa;
+}
+.nav-title{
+    width:100%;
+    font-size:30px;
+    top:20px;
+}

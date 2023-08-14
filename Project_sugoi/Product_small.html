@@ -3,83 +3,392 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="Product_small.css">
+  <link rel="stylesheet" href="./Product_small.css">
+  <link rel="stylesheet" href="./Footer/footer.css">
+  <link rel="stylesheet" href="./Header/headerForMobile.css">
+  <link rel="stylesheet" href="./Header/header.css">
+
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header class="mobile-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" id="toggleButton">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarSupportedContent"> <!-- Initially shown -->
+          <span class="close-button" id="closeButton">&times;</span>
+          <ul class="navbar-nav">
 
-    <div class="container-fluid">
-      <!-- hamburger button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <a class="navbar-brand" href="#">Sugoi</a>
-      <!-- coin -->
-      <a href="">
-        <i class="fa-solid fa-coins"></i>
-      </a>
-      <!-- buycart -->
-      <a class="buycart" href="">
-        <i class="fa-solid fa-cart-plus "></i>
-      </a>
-      <!-- searchbar -->
+            <div class="nav-title">所有分類</div>
 
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                主題企劃
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">sugoi X 台北市立動物園 未來動物園</a></li>
+
                 <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+
+                <li><a class="dropdown-item" href="#">sugoi 送禮指南 ｜ 生日、七夕</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">海外好設計｜夏日穿搭不撞款!</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                配件飾品
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">飾品</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">頭飾</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">眼鏡/太陽眼鏡</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">手錶</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">卡套/吊飾</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">其他配件</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                包包提袋
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">人氣精選</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">日常包款</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">錢包</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">上班/通勤包</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">收納包/行李箱</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">其他包包提袋</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                居家生活
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">人氣精選</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">家飾佈置</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">水壺/保溫瓶</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">雜貨</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">居家織品</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">居家清潔</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                品味美食
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">人氣精選</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">飲品/沖泡類</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">烘培食品</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                創意科技
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">人氣精選</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">手機平板週邊</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">電腦週邊</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">相機/影像器材</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                美妝保養
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">美妝保養夯話題 </a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">保養品</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">清潔用品</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">化妝品</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                群眾募資
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">募資</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">頭飾</a></li>
+
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">眼鏡/太陽眼鏡</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">手錶</a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">卡套/吊飾 </a></li>
+                <hr class="dropdown-divider">
+
+                <li><a class="dropdown-item" href="#">其他配件飾品</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="logo-sugoi">Sugoi</div>
+        <div class="cart-image"> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> </div>
       </div>
-    </div>
-
-  </nav>
-
-  <div class="col-12 col-md-12">
-    <!-- search -->
-    <div class="row height d-flex justify-content-center align-items-center">
-
-      <div class="col">
-        <div class="input-group form mb-3">
-          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-          <input type="text" class="form-control form-input" placeholder="type what you want">
+      <div class="col-12">
+        <div class="search">
+          <input type="text" class="searchTerm" placeholder="What are you looking for?">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
         </div>
       </div>
-    </div>
-
+      <div class="col-12">
+        <div class="recommend">
+          推薦:
+          <li>&nbsp;<a href="">咖啡豆</a></li>
+          <li>&nbsp;<a href="">建議物品</a></li>
+          <li>&nbsp;<a href="">推薦商品</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <header class="pc-header">
+    <header class="homepage-main-header mt-4 mb-4">
+      <div class="container">
+        <!-- header-search列 -->
+        <div class="d-flex align-items-center">
+          <div class="logo"><a href="#"><img class="w-100" src="sugoiimg/Logo.svg" alt=""></a></div>
+          <div class="header-search me-auto">
+            <div class="header-search-form">
+              <form v-on:submit.prevent="search" class="d-flex " role="search">
+                <input type="text" class="form-control" placeholder="搜尋好設計、商品" aria-label="Recipient's username"
+                  aria-describedby="basic-addon2">
+                <button class="btn btn-outline-secondary" type="submit">搜尋</button>
+              </form>
+            </div>
+            <div class="homepage-search-keyword">
+              <ul class="search-hot">
+                <li class="search-hot-items"><a href="#">日本</a></li>
+                <li class="search-hot-items"><a href="#">手作</a></li>
+                <li class="search-hot-items"><a href="#">環保杯</a></li>
+                <li class="search-hot-items"><a href="#">辦公室</a></li>
+                <li class="search-hot-items"><a href="#">手錶</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-right-inner">
+            <a href="#">我想在Pinkoi上販售</a>
+            <button type="button" class="btn btn-outline-secondary">登入/註冊</button>
+            <a href=""><img src="sugoiimg/shopicon.svg" alt=""></a>
+            <a href=""><img src="sugoiimg/Pcoin.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <!-- 主題下拉選單 -->
+      <nav class="container homepage-category-nav-pc">
+        <div class="row dropdown-group">
+          <ul class="nav-group">
+            <li class="nav-items">
+              <a href="#">
+                <h1>主題企劃</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">sugoi X 台北市立動物園 未來動物園</a></li>
+                <li class="nav-items-container-category"><a href="#">sugoi 送禮指南 ｜ 生日、七夕、男友禮</a></li>
+                <li class="nav-items-container-category"><a href="#">海外好設計｜夏日穿搭不撞款!</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>配件飾品</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">飾品</a></li>
+                <li class="nav-items-container-category"><a href="#">頭飾</a></li>
+                <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
+                <li class="nav-items-container-category"><a href="#">手錶</a></li>
+                <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
+                <li class="nav-items-container-category"><a href="#">其他配件</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>包包提袋</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                <li class="nav-items-container-category"><a href="#">日常包款</a></li>
+                <li class="nav-items-container-category"><a href="#">錢包</a></li>
+                <li class="nav-items-container-category"><a href="#">上班/通勤包</a></li>
+                <li class="nav-items-container-category"><a href="#">收納包/行李箱</a></li>
+                <li class="nav-items-container-category"><a href="#">其他包包提袋</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>居家生活</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                <li class="nav-items-container-category"><a href="#">家飾佈置</a></li>
+                <li class="nav-items-container-category"><a href="#">水壺/保溫瓶</a></li>
+                <li class="nav-items-container-category"><a href="#">雜貨</a></li>
+                <li class="nav-items-container-category"><a href="#">居家織品</a></li>
+                <li class="nav-items-container-category"><a href="#">居家清潔</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>品味美食</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                <li class="nav-items-container-category"><a href="#">飲品/沖泡類</a></li>
+                <li class="nav-items-container-category"><a href="#">烘培食品</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>創意科技</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
+                <li class="nav-items-container-category"><a href="#">手機平板週邊</a></li>
+                <li class="nav-items-container-category"><a href="#">電腦週邊</a></li>
+                <li class="nav-items-container-category"><a href="#">相機/影像器材</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>美妝保養</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">美妝保養夯話題</a></li>
+                <li class="nav-items-container-category"><a href="#">保養品</a></li>
+                <li class="nav-items-container-category"><a href="#">清潔用品</a></li>
+                <li class="nav-items-container-category"><a href="#">化妝品</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>群眾募資</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">募資</a></li>
+                <li class="nav-items-container-category"><a href="#">頭飾</a></li>
+                <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
+                <li class="nav-items-container-category"><a href="#">手錶</a></li>
+                <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
+                <li class="nav-items-container-category"><a href="#">其他配件飾品</a></li>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#">
+                <h1>所有分類</h1>
+              </a>
+              <ul class="nav-items-container">
+                <li class="nav-items-container-category"><a href="#">所有分類</a></li>
+                <li class="nav-items-container-category"><a href="#">頭飾</a></li>
+                <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
+                <li class="nav-items-container-category"><a href="#">手錶</a></li>
+                <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
+                <li class="nav-items-container-category"><a href="#">其他配件飾品</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </header>
+  <div class="container">
     <div class="row">
       <!-- image carousel -->
       <div class="col-12 col-md-6">
@@ -113,7 +422,7 @@
       <div class="col-12 col-md-6">
         <div class="product-body">
           <h1>台北職人咖啡</h1>
-          <p>設計品牌共售出x件商品</p>
+          <p>設計品牌共售出9件商品</p>
           <p>NT$260</p>
         </div>
         <div class="prodcut-config">
@@ -127,7 +436,7 @@
         </div>
 
         <div class="prodcut-quantity col-6">
-          <label>數量</label>
+          <label>數量 &nbsp</label>
           <select id="qty-select">
             <option value="1">1</option>
             <option value="1">2</option>
@@ -154,12 +463,102 @@
           </p>
           <p>
             設計館提供統一發票或免用統一發票收據
-        </p>
+          </p>
         </div>
       </div>
+      <div class="intro col-12 col-md-6 ">
+        <h2>商品介紹</h2>
+        ｜飄丿老張｜
+        <br>
+        【風味】：可可、堅果、草本<br>
+        【烘焙程度】：中深焙<br>
+        【咖啡豆種類】：曼特寧 濕剝法、巴西 日曬
+        ※可能因進貨狀況而調整<br>
+
+        咖啡師風味筆記：「堅果、可可風味明顯，口感厚實酸度低，是相當成熟的木質草本調，但也很適合搭配牛奶。」
+      </div>
+      <div class="promotions col-12 col-md-6">
+        <h2>優惠活動</h2>
+        免運優惠來囉！新會員 7 天內於 Pinkoi APP 下單 Pinkoi 幫你付運費，最高可折運費 NT$ 100（需使用 APP 下單）<br>
+        全館滿額免運：不限運送方式寄往台灣，滿 NT$ 799 享免運
+        獎勵任務進行中，週週送 P Coins 簽到領取獎勵<br>
+        多重優惠顯示，實際優惠折抵以購物車內的折抵金額為準<br>
+      </div>
+      <div class="product-info col-12 col-md-6">
+        <h2>商品資訊</h2>
+        <div class="col-12">
+          <div class="col-6">商品材質
+          </div>
+          <div class="col-6">其他材質</div>
+        </div>
+        <div class="col-12">
+          <div class="col-6">製造方式
+          </div>
+          <div class="col-6">手工製造
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="col-6">商品產地
+          </div>
+          <div class="col-6">台灣
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="col-6">庫存</div>
+          <div class="col-6">剩最後 2 件
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="col-6">商品排行
+          </div>
+          <div class="col-6">
+            No.96 - 咖啡/咖啡豆</div>
+        </div>
+        <div class="col-12">
+          <div class="col-6">商品熱門度
+          </div>
+          <div class="col-6">
+            被欣賞 1,855 次</div>
+        </div>
+        <div class="col-12">
+          <div class="col-6"></div>
+          <div class="col-6">已賣出 9 件商品
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="col-6"></div>
+          <div class="col-6">共 21 人收藏
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="col-6">販售許可
+          </div>
+          <div class="col-6">原創商品
+
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="col-6">商品摘要
+
+          </div>
+          <div class="col-6">
+            4個人物故事，4種咖啡配方，4種刻劃靈魂的絕妙風味；把人生中相遇的有趣靈魂，賦予他們相應的風味。 全台首支「刻劃靈魂的人物配方咖啡」，由「台北10大職人咖啡」士林北投唯一獲選店家【穠咖啡】獨家研發調配。 實體店面，接單現烘，滿額免運。
+
+          </div>
+        </div>
 
 
+      </div>
 
+      <div class="col-12 col-md-6">
+        <h2>關於品牌</h2>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <h2>購買評論</h2>
+      </div>
     </div>
   </div>
 
@@ -172,11 +571,147 @@
 
 
 
-  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row border-bottom pb-3">
+        <div class="col-6 col-md-2">
+          <ul>
+            <h3>探索好設計</h3>
+            <li>
+              <a href="#">所有商品分類</a>
+            </li>
+            <li><a href="#">設計誌</a>
+            </li>
+            <li>
+              <a href="#">跨館合併結帳專區</a>
+            </li>
+            <li>
+              <a href="#">Sugoi禮物卡</a>
+            </li>
+            <li>
+              <a href="#">Sugoi群眾募資</a>
+            </li>
+            <li>
+              <a href="#">找靈感</a>
+            </li>
+            <li>
+              <a href="#">逛櫥窗</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <ul>
+            <h3>販售</h3>
+            <li>
+              <a href="#">我想在Sugoi販售</a>
+            </li>
+            <li><a href="#">我想提案群眾募資專案</a>
+            </li>
+            <li>
+              <a href="#">設計館問與答</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <ul>
+            <h3>幫助/政策</h3>
+            <li>
+              <a href="#">問與答</a>
+            </li>
+            <li><a href="#">大宗採購</a>
+            </li>
+            <li>
+              <a href="#">訊息公告</a>
+            </li>
+            <li>
+              <a href="#">服務條款</a>
+            </li>
+            <li>
+              <a href="#">退貨政策</a>
+            </li>
+            <li>
+              <a href="#">會員制度 & P Coins 回饋計畫</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <ul>
+            <h3>認識Sugoi</h3>
+            <li>
+              <a href="#">關於我們</a>
+            </li>
+            <li><a href="#">媒體報導</a>
+            </li>
+            <li>
+              <a href="#">全新Sugoi</a>
+            </li>
+            <li>
+              <a href="#">人才招募</a>
+            </li>
+            <li>
+              <a href="#">iichi.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="mb-4">追蹤Sugoi</h3>
+          <div class="row icon-row">
+            <div class="col-2">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+            <div class="col-2">
+              <i class="fa-brands fa-line fa-2xl"></i>
+            </div>
+            <div class="col-2">
+              <i class="fa-brands fa-facebook fa-2xl"></i>
+            </div>
+            <div class="col-2">
+              <i class="fa-brands fa-youtube fa-2xl"></i>
+            </div>
+            <div class="col-2">
+              <i class="fa-brands fa-twitter fa-2xl"></i>
+            </div>
+            <div class="col-2">
+              <i class="fa-brands fa-tiktok fa-2xl"></i>
+            </div>
+          </div>
+          <p class="mt-4">隨時掌握最新好設計</p>
+        </div>
+        <div class="col-12 col-md-6 d-flex">
+          <div class="pic">
+            <img src="../pic/pinkoi_logo_2019.svg" alt="sugoi">
+          </div>
+          <div class="text ">
+            <p>Design the way you are.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="rights-row d-flex justify-content-between align-items-center ">
+            <div class="rights">
+              © 2023 hatsukoi. All Rights Reserved.
+            </div>
+            <div class="language">
+              <select name="homepage-lang-selector" id="lang-select">
+                <option value="">中文</option>
+                <option value="">English</option>
+                <option value="">日本語</option>
+                <option value="">한국어</option>
+                <option value="">Bahasa Melayu</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
   <script src="https://kit.fontawesome.com/985aa319bc.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+  <script src="./Header/headerForMobile.js"></script>
 </body>
 
 </html>

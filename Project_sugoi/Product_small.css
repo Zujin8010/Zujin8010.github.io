@@ -1,14 +1,111 @@
-/* search */
-.form-input{
-    background: url(./image/Search_Icon.svg.png)no-repeat;
-    background-size:contain;
-    background-position: left;
-    background-origin: content-box;
-    text-indent:40px;
-    height:50px;
+#carouselExampleInterval img {
+    height: 220px;
+    overflow:hidden;
+    width:100%;
+    
+}
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+@media (max-width:768px) {
+    .mobile-header {
+        background-color: #f8f9fa;
+    }
+
+    .pc-header {
+        display: none;
+    }
+
 }
 
+@media (min-width:769px) {
+    .mobile-header {
+        display: none;
+    }
 
-#carouselExampleInterval img{
-   height:220px;
+    .pc-header {
+        background-color: #f8f9fa;
+    }
+    #carouselExampleInterval img {
+        height:400px;
+        width:100%;
+        overflow:hidden;
+    }
+}
+
+body {
+    position: absolute;
+    
+}
+.product-body{
+    margin-top:5%;
+}
+.product-body h1{
+    font-size:30px;
+    font-weight:900;
+}
+.product-body p{
+    font-size:16px;
+}
+.product-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+
+    position: relative;
+}
+
+.product-cart button {
+    /* position: absolute; */
+    background-color: #e56051;
+    width: 98%;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.product-cart button:hover {
+    /* position: absolute; */
+    background-color: #d63220;
+    color:white;
+}
+.product-config{
+    display:flex;
+    
+}
+.product-quantity{
+    display:flex;
+    padding:50px;
+}
+
+.product-config input{
+    width:100%;
+}
+
+.product-collect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    
+    position: relative;
+}
+
+.product-collect button{
+    width:98%;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.product-collect button:hover {
+    /* position: absolute; */
+    background-color: rgb(173, 167, 167);
+    color:white;
+}
+.product-config{
+    margin:3%;
+}
+
+.product-info .col-12{
+    display:flex;
 }
