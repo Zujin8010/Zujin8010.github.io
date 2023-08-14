@@ -1,6 +1,5 @@
 #carouselExampleInterval img {
-    height: 220px;
-    overflow:hidden;
+    height: 576px;
     width:100%;
     
 }
@@ -29,12 +28,17 @@
         background-color: #f8f9fa;
     }
     #carouselExampleInterval img {
-        height:400px;
+        height:530px;
         width:100%;
         overflow:hidden;
     }
 }
-
+.row{
+    display: flex;
+}
+#spec-select{
+    display:none;
+}
 body {
     position: absolute;
     
@@ -45,6 +49,40 @@ body {
 .product-body h1{
     font-size:30px;
     font-weight:900;
+    position:relative;
+    top:-20px
+}
+.star{
+    margin-bottom:14px;
+}
+.star i{
+    color:#f16c5d;
+}
+.price{
+    color:#10567b;
+    font-size:30px;
+    font-weight:400;
+    line-height:1;
+    vertical-align:middle;
+    padding-bottom:36px;
+}
+.prodcut-quantity{
+    margin-bottom:14px;
+}
+.prodcut-quantity label{
+    display:block;
+    margin-bottom: 10px;
+}
+.prodcut-quantity select{
+    height:40px;
+    width:100px;
+    font-size:14px; 
+    padding:10px 34px 10px 14px;
+}
+.prodcut_reviews{
+    
+    display:flex;
+
 }
 .product-body p{
     font-size:16px;
@@ -60,10 +98,16 @@ body {
 
 .product-cart button {
     /* position: absolute; */
-    background-color: #e56051;
-    width: 98%;
+    background-color: #53c2e0;
+    color:white;
+    width: 100%;
     border-radius: 0.375rem;
+    border:none;
     transition: background-color 0.3s, color 0.3s;
+    font-size:16px;
+    box-sizing: border-box;
+    padding:9px 14px;
+    line-height:22px;
 }
 .product-cart button:hover {
     /* position: absolute; */
@@ -77,8 +121,12 @@ body {
 .product-quantity{
     display:flex;
     padding:50px;
+    margin-bottom: 10px;
 }
-
+.product-quantity label{
+    display:block;
+    margin-bottom:10px;
+}
 .product-config input{
     width:100%;
 }
@@ -93,9 +141,14 @@ body {
 }
 
 .product-collect button{
-    width:98%;
+    width:100%;
     border-radius: 0.375rem;
+    border:none;
     transition: background-color 0.3s, color 0.3s;
+    font-size:16px;
+    box-sizing: border-box;
+    padding:9px 14px;
+    line-height:22px;
 }
 .product-collect button:hover {
     /* position: absolute; */
@@ -108,4 +161,14 @@ body {
 
 .product-info .col-12{
     display:flex;
+}
+.des-info .col-12{
+    display: flex;
+}
+.title-line{
+    border-top: 1px solid #D3C9C9;
+    padding-bottom:10px;
+}
+.review-star i{
+    color:orange;
 }

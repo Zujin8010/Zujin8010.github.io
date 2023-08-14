@@ -1,0 +1,68 @@
+section{
+    margin: 5em 0;
+}
+h3{
+    font-size:1.1em;
+    color: #39393e;
+    margin-bottom: 0.8em;
+}
+
+
+.product-list > .row > .col > h6,
+.brand-mind > .wrap-space > .row > .col > .text > h6{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.product-list > .row > .col > a > .brand{
+    font-size: 0.7em;
+    color: gray;
+    overflow: hidden;
+}
+.product-list > .row > .col > .price,
+.brand-mind > .wrap-space > .row > .col > .text > p{
+    font-size: 0.7em;
+    color:#003354;
+}
+
+/* 品牌推廣 */
+.info > .col-3 > a > h6{
+    font-size: 0.7em;
+    color: #39393e;
+}
+.info  > .col-3 > p{
+    font-size: 0.5em;
+}
+
+/* 品牌旗艦館 */
+.brand-list > .row > .col > a > h6{
+    font-size: 0.8em;
+    color: #39393e; 
+    /* overflow: hidden;            */
+}
+
+/* 每日新星 */
+.info > .col-8 > a > h6{
+    font-size: 0.7em;
+    color: #39393e; 
+}
+.info > .col-8 > p{
+    font-size: 0.9em;
+    color: rgb(254, 150, 167);
+}
+.info > .col-4 > a > button{
+    font-size: 0.7em;
+    background-color:#003354;
+}
+
+/* 品牌理念 */
+.brand-mind{
+    width: 100%;
+    background-color:#F7F7F8;
+    /* display: flex;
+    justify-content: center; */
+
+}
+.wrap-space{
+    width: 70%;
+    margin: auto;
+}
