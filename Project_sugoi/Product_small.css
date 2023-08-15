@@ -11,15 +11,27 @@ html {
     width: 100%;
 
 }
+.navbar-space{
+    margin:0px 90px;
+    display: flex;
+    position:relative;
+    justify-content: space-around;
+}
+
 .navBtn {
-    flex-direction:row;
+    
+    flex-direction:column;
+    
 }
 
 a {
     text-decoration: none;
     color: #2e90b7
 }
-
+.nav-item a{
+    color:#39393e;
+    font-weight: 700;
+}
 .carousel-item img {
     max-width: 100%;
     height: auto;
@@ -459,7 +471,7 @@ h2 {
 }
 .nav-collect{
     box-sizing:border-box;
-    display:inline;
+    display:inline-block;
     margin:0;
     text-align:center;
     width:100%;
@@ -477,7 +489,7 @@ h2 {
 }
 .nav-cart{
     box-sizing:border-box;
-    display:inline;
+    display:inline-block;
     margin:0;
     text-align:center;
     width:100%;
@@ -502,5 +514,17 @@ h2 {
     margin-bottom:5px;
 }
 .commend{
-    margin-bottom:px;
+    margin-bottom:5px;
+}
+.review-time{
+    font-size:12px;
+}
+.change-review-btn{
+    margin-bottom: 10px;
+}
+/* .navBtn{
+    margin-left:600px;
+} */
+.nav-pills{
+    justify-content: space-between;
 }
