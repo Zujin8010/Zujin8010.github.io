@@ -11,6 +11,9 @@ html {
     width: 100%;
 
 }
+.navBtn {
+    flex-direction:row;
+}
 
 a {
     text-decoration: none;
