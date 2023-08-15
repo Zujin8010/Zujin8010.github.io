@@ -8,643 +8,424 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./Product_small.css">
-  <link rel="stylesheet" href="./Footer/footer.css">
-  <link rel="stylesheet" href="./Header/headerForMobile.css">
-  <link rel="stylesheet" href="./Header/header.css">
-  <link rel="stylesheet" href="./landing.css">
+
 </head>
 
 <body>
-
-  <header class="mobile-header sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" id="toggleButton">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show" id="navbarSupportedContent"> <!-- Initially shown -->
-          <span class="close-button" id="closeButton">&times;</span>
-          <ul class="navbar-nav">
-
-            <div class="nav-title">所有分類</div>
-
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                主題企劃
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">sugoi X 台北市立動物園 未來動物園</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">sugoi 送禮指南 ｜ 生日、七夕</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">海外好設計｜夏日穿搭不撞款!</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                配件飾品
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">飾品</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">頭飾</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">眼鏡/太陽眼鏡</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">手錶</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">卡套/吊飾</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">其他配件</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                包包提袋
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">人氣精選</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">日常包款</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">錢包</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">上班/通勤包</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">收納包/行李箱</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">其他包包提袋</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                居家生活
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">人氣精選</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">家飾佈置</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">水壺/保溫瓶</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">雜貨</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">居家織品</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">居家清潔</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                品味美食
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">人氣精選</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">飲品/沖泡類</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">烘培食品</a></li>
-
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                創意科技
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">人氣精選</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">手機平板週邊</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">電腦週邊</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">相機/影像器材</a></li>
-
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                美妝保養
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">美妝保養夯話題 </a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">保養品</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">清潔用品</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">化妝品</a></li>
-
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                群眾募資
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">募資</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">頭飾</a></li>
-
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">眼鏡/太陽眼鏡</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">手錶</a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">卡套/吊飾 </a></li>
-                <hr class="dropdown-divider">
-
-                <li><a class="dropdown-item" href="#">其他配件飾品</a></li>
-              </ul>
-            </li>
+  <div class="nav-use">
+    <nav id="navbar" class="sticky-top navbar navbar-light bg-light px-2 ">
+
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+              <a class="nav-link" href="#intro">商品介紹</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#about-desinger">品牌介紹</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#coustomer-preview">購買評價</a>
+          </li>
+      </ul>
+      <ul class="navBtn">
+          <button class="nav-collect"> <i class="fa-regular fa-heart"></i> 收藏商品</button>
+          <button class="nav-cart"> <i class="fa-solid fa-cart-plus"></i> 放入購物車 </button>
+
+      </ul>
+  </nav>
+    <div class="container">
+
+      <div class="row ">
+        <div class="nav-bar"></div>
+
+        <div class="col-12 breaddiv">
+          <nav aria-label="breadcrumb"
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='10'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">品味美食 </a></li>
+              <li class="breadcrumb-item"><a href="#">飲品/沖泡類 </a></li>
+              <li class="breadcrumb-item"><a href="#">咖啡/咖啡豆 其他材質</a> </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-12 col-md-6 ">
+          <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+
+            <div class="carousel-inner ">
+              <div class="carousel-item active" data-bs-interval="10000">
+
+                <img src="./image/big_1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./image/big_2.jpg" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./image/big_3.jpg" class="d-block w-100 " alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5">
+          <div class="product-body ">
+            <h1>【台北職人】飄丿老張 中深焙 木質草本 | 刻劃靈魂的人物咖啡豆</h1>
+            <div class="prodcut_reviews">
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="OneToFive">
+                <a href="#">&nbsp; 5.0</a>
+              </div>
+              <div class="reviewers">
+                <a href="#">&nbsp; (1)</a>
+              </div>
+            </div>
+            <!-- <p>設計品牌共售出9件商品</p> -->
+            <div class="price">
+              <span>NT$260</span>
+            </div>
+          </div>
+          <div class="prodcut-config">
+            <select name="" id="spec-select">
+              <option selected>請選擇商品規格</option>
+              <option value="1">阿寶綜合30包</option>
+              <option value="1">衣索比亞水洗30包</option>
+              <option value="1">衣索比亞日曬30包</option>
+              <option value="1">阿寶綜合10包+衣索比亞水洗10包+衣索比亞日曬10包</option>
+            </select>
+          </div>
+
+          <div class="prodcut-quantity col-6">
+            <label>數量 &nbsp</label>
+            <select id="qty-select">
+              <option value="1">1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+              <option value="1">4</option>
+              <option value="1">5</option>
+              <option value="1">6</option>
+            </select>
+          </div>
+
+          <div class="product-cart ">
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i>放入購物車
+            </button>
+          </div>
+          <div class="product-collect">
+            <button>
+              <i class="fa-regular fa-heart"></i>收藏商品
+            </button>
+          </div>
+          <div class="product-text">
+            <span><i class="fa-solid fa-gift"></i>&nbsp;免費贈送電子賀卡,結帳完成後填寫
+              <a href="">電子賀卡是甚麼?</a><br>
+            </span>
+            <span>本商品為「接單訂製」。付款後，從開始製作到寄出商品為 3 個工作天。（不包含假日）</span><br>
+            <span>設計館符合免辦理營業登記，無需開立統一發票</span>
+          </div>
+        </div>
+
+        <div id="intro" class="intro col-12 col-md-6 ">
+          <h2>商品介紹</h2>
+          <div class="title-line"></div>
+          ｜飄丿老張｜
+          <br>
+          【風味】：可可、堅果、草本<br>
+          【烘焙程度】：中深焙<br>
+          【咖啡豆種類】：曼特寧 濕剝法、巴西 日曬
+          ※可能因進貨狀況而調整<br>
+
+          咖啡師風味筆記：「堅果、可可風味明顯，口感厚實酸度低，是相當成熟的木質草本調，但也很適合搭配牛奶。」
+        </div>
+        <div class="promotions col-12 col-md-5">
+          <div class="title-line"></div>
+          <h2>優惠活動</h2>
+          <ul class="promo_list">
+            <li>免運優惠來瞜! 新會員7天內下單 幫你付運費,最高可折運費NT$100</li>
+            <li>全館滿額免運：不限運送方式寄往台灣，滿 NT$ 799 享免運 </li>
+            <span class="moreText ">
+              <li>獎勵任務進行中，週週送 P Coins 簽到領取獎勵</li>
+              <li>跨館合併結帳滿額免運：在指定所在地使用指定幣別下單（台灣/新台幣），不限運送方式寄往台灣，滿 NT$ 1,500 享免運</li>
+              <li>獎勵任務進行中，週週送 P Coins <a href="">簽到領取獎勵</a> </li>
+              <span>多重優惠顯示，實際優惠折抵以購物車內的折抵金額為準</span>
+            </span><br>
+            <button class="moreButton">顯示更多優惠活動 <i class="fa-solid fa-chevron-down"></i></button>
           </ul>
         </div>
-        <div class="logo-sugoi">Sugoi</div>
-        <div class="cart-image"> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> </div>
-      </div>
-      <div class="col-12">
-        <div class="search">
-          <input type="text" class="searchTerm" placeholder="What are you looking for?">
-          <button type="submit" class="searchButton">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="recommend">
-          推薦:
-          <li>&nbsp;<a href="">咖啡豆</a></li>
-          <li>&nbsp;<a href="">建議物品</a></li>
-          <li>&nbsp;<a href="">推薦商品</a></li>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <header class="pc-header">
-    <header class="homepage-main-header  mb-4">
-      <div class="container">
-        <!-- header-search列 -->
-        <div class="d-flex align-items-center">
-          <div class="logo"><a href="#"><img class="w-100" src="sugoiimg/Logo.svg" alt=""></a></div>
-          <div class="header-search me-auto">
-            <div class="header-search-form">
-              <form v-on:submit.prevent="search" class="d-flex " role="search">
-                <input type="text" class="form-control" placeholder="搜尋好設計、商品" aria-label="Recipient's username"
-                  aria-describedby="basic-addon2">
-                <button class="btn btn-outline-secondary" type="submit">搜尋</button>
-              </form>
-            </div>
-            <div class="homepage-search-keyword">
-              <ul class="search-hot">
-                <li class="search-hot-items"><a href="#">日本</a></li>
-                <li class="search-hot-items"><a href="#">手作</a></li>
-                <li class="search-hot-items"><a href="#">環保杯</a></li>
-                <li class="search-hot-items"><a href="#">辦公室</a></li>
-                <li class="search-hot-items"><a href="#">手錶</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="header-right-inner">
-            <a href="#">我想在Pinkoi上販售</a>
-            <button type="button" class="btn btn-outline-secondary">登入/註冊</button>
-            <a href=""><img src="sugoiimg/shopicon.svg" alt=""></a>
-            <a href=""><img src="sugoiimg/Pcoin.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-      <!-- 主題下拉選單 -->
-      <nav class="container homepage-category-nav-pc">
-        <div class="row dropdown-group">
-          <ul class="nav-group">
-            <li class="nav-items">
-              <a href="#">
-                <h1>主題企劃</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">sugoi X 台北市立動物園 未來動物園</a></li>
-                <li class="nav-items-container-category"><a href="#">sugoi 送禮指南 ｜ 生日、七夕、男友禮</a></li>
-                <li class="nav-items-container-category"><a href="#">海外好設計｜夏日穿搭不撞款!</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>配件飾品</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">飾品</a></li>
-                <li class="nav-items-container-category"><a href="#">頭飾</a></li>
-                <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
-                <li class="nav-items-container-category"><a href="#">手錶</a></li>
-                <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
-                <li class="nav-items-container-category"><a href="#">其他配件</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>包包提袋</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
-                <li class="nav-items-container-category"><a href="#">日常包款</a></li>
-                <li class="nav-items-container-category"><a href="#">錢包</a></li>
-                <li class="nav-items-container-category"><a href="#">上班/通勤包</a></li>
-                <li class="nav-items-container-category"><a href="#">收納包/行李箱</a></li>
-                <li class="nav-items-container-category"><a href="#">其他包包提袋</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>居家生活</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
-                <li class="nav-items-container-category"><a href="#">家飾佈置</a></li>
-                <li class="nav-items-container-category"><a href="#">水壺/保溫瓶</a></li>
-                <li class="nav-items-container-category"><a href="#">雜貨</a></li>
-                <li class="nav-items-container-category"><a href="#">居家織品</a></li>
-                <li class="nav-items-container-category"><a href="#">居家清潔</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>品味美食</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
-                <li class="nav-items-container-category"><a href="#">飲品/沖泡類</a></li>
-                <li class="nav-items-container-category"><a href="#">烘培食品</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>創意科技</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">人氣精選</a></li>
-                <li class="nav-items-container-category"><a href="#">手機平板週邊</a></li>
-                <li class="nav-items-container-category"><a href="#">電腦週邊</a></li>
-                <li class="nav-items-container-category"><a href="#">相機/影像器材</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>美妝保養</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">美妝保養夯話題</a></li>
-                <li class="nav-items-container-category"><a href="#">保養品</a></li>
-                <li class="nav-items-container-category"><a href="#">清潔用品</a></li>
-                <li class="nav-items-container-category"><a href="#">化妝品</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>群眾募資</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">募資</a></li>
-                <li class="nav-items-container-category"><a href="#">頭飾</a></li>
-                <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
-                <li class="nav-items-container-category"><a href="#">手錶</a></li>
-                <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
-                <li class="nav-items-container-category"><a href="#">其他配件飾品</a></li>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#">
-                <h1>所有分類</h1>
-              </a>
-              <ul class="nav-items-container">
-                <li class="nav-items-container-category"><a href="#">所有分類</a></li>
-                <li class="nav-items-container-category"><a href="#">頭飾</a></li>
-                <li class="nav-items-container-category"><a href="#">眼鏡/太陽眼鏡</a></li>
-                <li class="nav-items-container-category"><a href="#">手錶</a></li>
-                <li class="nav-items-container-category"><a href="#">卡套/吊飾</a></li>
-                <li class="nav-items-container-category"><a href="#">其他配件飾品</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </header>
-  <div class="container">
-    <div class="row ">
-      <div class="col-12 justify-content-center align-content-center">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">品味美食 </a></li>
-            <li class="breadcrumb-item"><a href="#">飲品/沖泡類 </a></li>
-            <li class="breadcrumb-item"><a href="#">咖啡/咖啡豆 其他材質</a> </li>
-          </ol>
-        </nav>
-      </div>
-
-      <div class="col-12 col-md-6 ">
-        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
-
-          <div class="carousel-inner ">
-            <div class="carousel-item active" data-bs-interval="10000">
-
-              <img src="./image/bean.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="./image/thumbBean.jpg" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./image/small2.jpg" class="d-block w-100 " alt="...">
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6">
-        <div class="product-body ">
-          <h1>【台北職人】飄丿老張 中深焙 木質草本 | 刻劃靈魂的人物咖啡豆</h1>
-          <div class="prodcut_reviews">
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <div class="OneToFive">
-              <a href="#">&nbsp; 5.0</a>
-            </div>
-            <div class="reviewers">
-              <a href="#">&nbsp; (1)</a>
-            </div>
-          </div>
-          <!-- <p>設計品牌共售出9件商品</p> -->
-          <div class="price">
-            <span>NT$260</span>
-          </div>
-        </div>
-        <div class="prodcut-config">
-          <select name="" id="spec-select">
-            <option selected>請選擇商品規格</option>
-            <option value="1">阿寶綜合30包</option>
-            <option value="1">衣索比亞水洗30包</option>
-            <option value="1">衣索比亞日曬30包</option>
-            <option value="1">阿寶綜合10包+衣索比亞水洗10包+衣索比亞日曬10包</option>
-          </select>
-        </div>
-
-        <div class="prodcut-quantity col-6">
-          <label>數量 &nbsp</label>
-          <select id="qty-select">
-            <option value="1">1</option>
-            <option value="1">2</option>
-            <option value="1">3</option>
-            <option value="1">4</option>
-            <option value="1">5</option>
-            <option value="1">6</option>
-          </select>
-        </div>
-
-        <div class="product-cart ">
-          <button>
-            <i class="fa-solid fa-cart-shopping"></i>放入購物車
-          </button>
-        </div>
-        <div class="product-collect">
-          <button>
-            <i class="fa-regular fa-heart"></i>收藏商品
-          </button>
-        </div>
-        <div class="product-text">
-          <p>
-            付款後，從備貨到寄出商品為 3 個工作天。（不包含假日）
-          </p>
-          <p>
-            設計館提供統一發票或免用統一發票收據
-          </p>
-        </div>
-      </div>
-      <div class="intro col-12 col-md-6 ">
-        <h2>商品介紹</h2>
-        <div class="title-line"></div>
-        ｜飄丿老張｜
-        <br>
-        【風味】：可可、堅果、草本<br>
-        【烘焙程度】：中深焙<br>
-        【咖啡豆種類】：曼特寧 濕剝法、巴西 日曬
-        ※可能因進貨狀況而調整<br>
-
-        咖啡師風味筆記：「堅果、可可風味明顯，口感厚實酸度低，是相當成熟的木質草本調，但也很適合搭配牛奶。」
-      </div>
-      <div class="promotions col-12 col-md-6">
-        <div class="title-line"></div>
-        <h2>優惠活動</h2>
-        免運優惠來囉！新會員 7 天內於 Pinkoi APP 下單 Pinkoi 幫你付運費，最高可折運費 NT$ 100（需使用 APP 下單）<br>
-        全館滿額免運：不限運送方式寄往台灣，滿 NT$ 799 享免運
-        獎勵任務進行中，週週送 P Coins 簽到領取獎勵<br>
-        多重優惠顯示，實際優惠折抵以購物車內的折抵金額為準<br>
-      </div>
-      <div class="product-info col-12 col-md-6">
-        <h2>商品資訊</h2>
-        <div class="title-line"></div>
-        <div class="col-12">
-          <div class="col-6">商品材質
-          </div>
-          <div class="col-6">其他材質</div>
-        </div>
-        <div class="col-12">
-          <div class="col-6">製造方式
-          </div>
-          <div class="col-6">手工製造
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="col-6">商品產地
-          </div>
-          <div class="col-6">台灣
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="col-6">庫存</div>
-          <div class="col-6">剩最後 2 件
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="col-6">商品排行
-          </div>
-          <div class="col-6">
-            No.96 - 咖啡/咖啡豆</div>
-        </div>
-        <div class="col-12">
-          <div class="col-6">商品熱門度
-          </div>
-          <div class="col-6">
-            被欣賞 1,855 次</div>
-        </div>
-        <div class="col-12">
-          <div class="col-6"></div>
-          <div class="col-6">已賣出 9 件商品
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="col-6"></div>
-          <div class="col-6">共 21 人收藏
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div class="col-6">販售許可
-          </div>
-          <div class="col-6">原創商品
-
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div class="col-6">商品摘要
-
-          </div>
-          <div class="col-6">
-            4個人物故事，4種咖啡配方，4種刻劃靈魂的絕妙風味；把人生中相遇的有趣靈魂，賦予他們相應的風味。 全台首支「刻劃靈魂的人物配方咖啡」，由「台北10大職人咖啡」士林北投唯一獲選店家【穠咖啡】獨家研發調配。
-            實體店面，接單現烘，滿額免運。
-
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="about-desinger col-12 col-md-6">
-        <h2>關於品牌</h2>
-        <div class="title-line"></div>
-        <div class="row info d-flex align-items-center gx-2 my-2">
-          <div class="col-3 p-3">
-            <a href="">
-
-              <img class="w-100" src="./LandingPage-carousel/品牌旗艦館01.png" alt="">
-            </a>
-          </div>
-
-          <div class="col-3 ">
-            <a class="text-decoration-none" href="">
-              <h6 class="m-1">品牌名稱</h6>
-            </a>
-            <p class="m-1"><i class="fa-regular fa-star"></i>&ensp;評價</p>
-            <p class="m-1"> <i class="fa-regular fa-user"></i>&ensp;關注人數</p>
-          </div>
-
-          <div class="col-6 d-flex justify-content-center">
-            <a href="">
-              <button type="button" class="btn btn-outline-secondary btn-sm me-1 px-3">即刻探索</button>
-            </a>
-            <button type="button" class="btn btn-outline-secondary btn-sm ms-1"><i
-                class="fa-regular fa-heart"></i></button>
-          </div>
-        </div>
-        <div class="des-info">
+        <div class="product-info col-12 col-md-6">
+          <h2>商品資訊</h2>
+          <div class="title-line"></div>
           <div class="col-12">
-            <div class="col-6">上次上線：</div>
-            <div class="col-6">超過 1 週</div>
-
-
+            <div class="col-4">商品材質
+            </div>
+            <div class="col-6"><a href="">其他材質</a></div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">製造方式
+            </div>
+            <div class="col-6">手工製造
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">商品產地
+            </div>
+            <div class="col-6">台灣
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">庫存</div>
+            <div class="col-6">剩最後 2 件
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">商品排行
+            </div>
+            <div class="col-6"> <a href="">No.96 - 咖啡/咖啡豆</a>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">商品熱門度
+            </div>
+            <div class="col-6">
+              被欣賞 1,855 次</div>
+          </div>
+          <div class="col-12">
+            <div class="col-4"></div>
+            <div class="col-6">已賣出 9 件商品
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4"></div>
+            <div class="col-6">共 21 人收藏
+            </div>
           </div>
 
           <div class="col-12">
-            <div class="col-6">回應率：</div>
-            <div class="col-6">80%</div>
+            <div class="col-4">販售許可
+            </div>
+            <div class="col-6">原創商品
+
+            </div>
           </div>
 
           <div class="col-12">
-            <div class="col-6">回應速度：</div>
-            <div class="col-6">1日內</div>
-          </div>
+            <div class="col-4">商品摘要
 
-          <div class="col-12">
-            <div class="col-6">平均出貨速度：</div>
-            <div class="col-6">1～3 日</div>
+            </div>
+            <div class="col-6">
+              4個人物故事，4種咖啡配方，4種刻劃靈魂的絕妙風味；把人生中相遇的有趣靈魂，賦予他們相應的風味。 全台首支「刻劃靈魂的人物配方咖啡」，由「台北10大職人咖啡」士林北投唯一獲選店家【穠咖啡】獨家研發調配。
+              實體店面，接單現烘，滿額免運。
+
+            </div>
           </div>
 
 
         </div>
+
+        <div id="about-desinger" class="about-desinger col-12 col-md-5">
+          <div class="title-line"></div>
+          <h2>關於品牌 <a href="#">逛設計品牌</a> </h2>
+          <div class="brand-card col-md-12">
+            <div class="brand-card-top col-12 ">
+              <img src="./coffeeImage/brandcard_top.jpg" alt="">
+            </div>
+            <div class="prodcutShop col-12">
+              <div class="info-all">
+                <div class="info-image col-3">
+                  <img src="./coffeeImage/nong.jpg" alt="">
+                </div>
+                <div class="info-name col-9">
+                  <span class="shopName"><a href="#">穠咖啡</a></span><br>
+                  <span><i class="fa-solid fa-location-dot"></i>台灣</span>
+
+                  <div class="shop_reviews">
+                    <div class="shopStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="OneToFive">
+                      <a href="#">&nbsp; 5.0</a>
+                    </div>
+                    <div class="reviewers">
+                      <a href="#">&nbsp; (1)</a>
+                    </div>
+                  </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shopBtn">
+            <button class="addFavor"><i class="fa-solid fa-plus"></i>加入關注</button>
+            <button class="connectDesign"><i class="fa-solid fa-address-card"></i>聯絡設計師</button>
+          </div>
+
+
+
+          <div class="des-info">
+            <div class="col-12">
+              <div class="col-4">上次上線：</div>
+              <div class="col-6">超過 1 週</div>
+            </div>
+
+            <div class="col-12">
+              <div class="col-4">回應率：</div>
+              <div class="col-6">80%</div>
+            </div>
+
+            <div class="col-12">
+              <div class="col-4">回應速度：</div>
+              <div class="col-6">1日內</div>
+            </div>
+
+            <div class="col-12">
+              <div class="col-4">平均出貨速度：</div>
+              <div class="col-6">1～3 日</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="product-info col-12 col-md-6">
+          <h2>食品資訊</h2>
+          <div class="title-line"></div>
+          <div class="col-12">
+            <div class="col-4">賞味期限
+            </div>
+            <div class="col-6">製造日期後45天</div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">過敏原
+            </div>
+            <div class="col-6">無
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">保存方法
+            </div>
+            <div class="col-6">常溫,避免高溫,乾燥,避免陽光直射
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">內容物</div>
+            <div class="col-6">咖啡豆
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">內容輛
+            </div>
+            <div class="col-6"> 225g x 1
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">廠商名稱
+            </div>
+            <div class="col-6">
+              奧立工作室</div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">廠商電話</div>
+            <div class="col-6">02-28286210
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="col-4">廠商地址</div>
+            <div class="col-6">台北市北投區明德路146號
+            </div>
+          </div>
+        </div>
+
+        <div class="sameCompany col-12 col-md-6">
+          <div class="title-line"></div>
+          <h2>設計館其他商品 <a href="">看更多</a></h2>
+
+          <div class="card_group">
+            <div class="card col-4">
+              <img src="./coffeeImage/card_1.jpg" alt="">
+              <div class="card-body">
+                <h6 class="card-title"><a href="">【雜誌推薦店家】刻劃靈魂的人物咖啡</a></h6>
+                <p class="card-text"><a href="">穠咖啡</a></p>
+                <p class="card-price"><a href="">NT$680</a></p>
+
+              </div>
+            </div>
+            <div class="card col-4">
+              <img src="./coffeeImage/card_2.jpg" alt="">
+              <div class="card-body">
+                <h6 class="card-title"><a href="">【職人推薦】風流卡特| 中焙 酒釀發酵</a></h6>
+                <p class="card-text"><a href="">穠咖啡</a></p>
+                <p class="card-price"><a href="">NT$300</a></p>
+
+              </div>
+            </div>
+
+            <div class="card col-4">
+              <img src="./coffeeImage/card_3.jpg" alt="">
+              <div class="card-body">
+                <h6 class="card-title"><a href="">【雜誌推薦店家】風流卡特 | 酒香 中焙 濾掛</a></h6>
+                <p class="card-text"><a href="">穠咖啡</a></p>
+                <p class="card-price"><a href="">NT$200</a></p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div class="coustomer-preview col-12 col-md-6">
-        <h2>購買評論</h2>
+
+      <div id="coustomer-preview" class="coustomer-preview col-12 col-md-6">
+        <h2>購買評價</h2>
         <div class="title-line"></div>
-        <ul class="users-review">
+        <div class="change-review-btn">
+          <button class="forThis">本商品評價</button>
+          <button class="forCompany">品牌所有評價</button>
+
+        </div>
+        <div class="prodcut_reviews">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="OneToFive">
+            <a href="#">&nbsp; 5.0</a>
+          </div>
+          <div class="reviewers">
+            <a href="#">&nbsp; (1)</a>
+          </div>
+        </div>
+
+        <div class="title-line"></div>
+
+        <div class="users-review">
           <div class="users-group">
             <li class="users">
               <img src="" alt="">
-              <p>User1</p>
+              <p>U******1</p>
             </li>
 
             <li class="review-star">
@@ -653,36 +434,100 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <p class="review-time">DateTime</p>
+              <p class="review-time">一天前</p>
             </li>
             <li>This is Good</li>
           </div>
 
+          <div class="title-line"></div>
           <div class="users-group">
             <li class="users">
               <img src="" alt="">
-              <p>User2</p>
+              <p>U******2</p>
             </li>
-
             <li class="review-star">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-              <p class="review-time">DateTime</p>
+              <p class="review-time">兩天前</p>
             </li>
             <li>This is Awesome</li>
           </div>
-        </ul>
+        </div>
 
       </div>
 
-      <div class="col-12 col-md-6">
-        <h2>相似商品</h2>
+
+
+      <div class=" similiar col-12 col-md-12">
         <div class="title-line"></div>
+        <h2>與此商品相似</h2>
+        <div class="card_group row">
+          <div class="card col-5 col-md-2">
+            <img src="./coffeeImage/card_1.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"><a href="">【雜誌推薦店家】刻劃靈魂的人物咖啡</a></h6>
+              <p class="card-text"><a href="">穠咖啡</a></p>
+              <p class="card-price"><a href="">NT$680</a></p>
+
+            </div>
+          </div>
+          <div class="card col-5 col-md-2">
+            <img src="./coffeeImage/card_2.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"><a href="">【職人推薦】風流卡特| 中焙 酒釀發酵</a></h6>
+              <p class="card-text"><a href="">穠咖啡</a></p>
+              <p class="card-price"><a href="">NT$300</a></p>
+
+            </div>
+          </div>
+
+          <div class="card col-5 col-md-2">
+            <img src="./coffeeImage/card_3.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"><a href="">【雜誌推薦店家】風流卡特 | 酒香 中焙 濾掛</a></h6>
+              <p class="card-text"><a href="">穠咖啡</a></p>
+              <p class="card-price"><a href="">NT$200</a></p>
+            </div>
+          </div>
+
+          <div class="card col-5 col-md-2">
+            <img src="./coffeeImage/card_1.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"><a href="">【雜誌推薦店家】刻劃靈魂的人物咖啡</a></h6>
+              <p class="card-text"><a href="">穠咖啡</a></p>
+              <p class="card-price"><a href="">NT$680</a></p>
+
+            </div>
+          </div>
+
+          <div class="card col-5 col-md-2">
+            <img src="./coffeeImage/card_2.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"><a href="">【職人推薦】風流卡特| 中焙 酒釀發酵</a></h6>
+              <p class="card-text"><a href="">穠咖啡</a></p>
+              <p class="card-price"><a href="">NT$300</a></p>
+
+            </div>
+          </div>
+
+          <div class="card col-5 col-md-2">
+            <img src="./coffeeImage/card_3.jpg" alt="">
+            <div class="card-body">
+              <h6 class="card-title"><a href="">【雜誌推薦店家】風流卡特 | 酒香 中焙 濾掛</a></h6>
+              <p class="card-text"><a href="">穠咖啡</a></p>
+              <p class="card-price"><a href="">NT$200</a></p>
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </div>
+
+
   </div>
 
 
@@ -693,9 +538,7 @@
 
 
 
-
-
-  <footer>
+  <!-- <footer>
     <div class="container">
       <div class="row border-bottom pb-3">
         <div class="col-6 col-md-2">
@@ -827,7 +670,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 
   <script src="https://kit.fontawesome.com/985aa319bc.js" crossorigin="anonymous"></script>
@@ -835,6 +678,7 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <script src="./Header/headerForMobile.js"></script>
+  <script src="./Unit.js"></script>
 
 </body>
 
