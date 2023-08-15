@@ -522,9 +522,12 @@ h2 {
 .change-review-btn{
     margin-bottom: 10px;
 }
-/* .navBtn{
-    margin-left:600px;
-} */
+.navBtn{
+    margin:auto;
+}
 .nav-pills{
     justify-content: space-between;
+}
+#navbar{
+    display: none;
 }
