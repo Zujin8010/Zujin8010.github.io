@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+</head>
+
+<body>
+    <div id="app">
+        <input v-bind:value="message1" v-on:input="message1=$event.target.value" type="text">
+        <p>
+            {{message1}}
+        </p>
+
+        <input v-model="message2" type="text">
+        <p>
+            {{message2}}
+        </p>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+
+        Vue.createApp({
+            data() {
+                return {
+                    message1: 'Build School',
+                    message2: 'Build School'
+                }
+            }
+        }).mount('#app')
+
+    </script>
+
+</body>
+
+</html>

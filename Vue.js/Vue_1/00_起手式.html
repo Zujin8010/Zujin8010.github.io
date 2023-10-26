@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue3 Demo</title>
+</head>
+
+<body>
+
+    <!-- step2. 定義要被Vue控制的HTML區域 -->
+    <div id="app">
+        <!-- step5. 用{{}} 加上vue3 變數-->
+        <h1>{{title}}</h1>
+        <p>{{content}}</p>
+    </div>
+    <!-- step1. 引入Vue.js CDN-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- step3. 加入 script，並新增 Vue實體 -->
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    // step4. data 回傳值設定 vue3 變數
+                    title: 'Hello Vue3',
+                    content: 'This is a Vue3 Demo'
+                }
+            }
+        }).mount('#app')
+    </script>
+
+</body>
+
+</html>             

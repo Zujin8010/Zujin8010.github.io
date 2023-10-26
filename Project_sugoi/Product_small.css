@@ -24,7 +24,7 @@ html {
     
 }
 
-a {
+.nav-use a,.navbar a,.container a {
     text-decoration: none;
     color: #2e90b7
 }
@@ -376,8 +376,8 @@ h2 {
 }
 
 .addFavor {
-    background-color: #1a7ab2;
-    border-color: #1a7ab2;
+    background-color: #53c2e0;
+    border-color: #53c2e0;
     color: white;
     font-size: inherit;
     font-weight: inherit;
@@ -388,7 +388,7 @@ h2 {
 }
 
 .addFavor:hover {
-    background-color: #064162;
+    background-color: #47a6c0;
     transition: 0.3s background-color;
 }
 

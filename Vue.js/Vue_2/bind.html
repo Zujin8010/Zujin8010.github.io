@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="app"></div>
+<button v-bind:disabled="btnDisableStatus">這是按鈕1</button>
+<button :disabled:disabled="btnDisableStatus">這是按鈕2</button>
+<img v-bind:src="imgSrc" alt="">
+<img :src="imgSrc" alt="">
+<p v-if="isShow">v-ifShow是true</p>
+<p v-else>v-if:isShow是False</p>
+</body>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+
+        Vue.createApp({
+            data(){
+                return{
+                    btnDisableStatus:true,
+                    imgSrc:,
+                    isShow:true
+                }
+            }
+        }).mount('#app')
+</script>
+
+
+
+
+</html>

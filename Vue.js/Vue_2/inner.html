@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div id="app">
+    <p>methods : 總金額: 共 {{ methodsSubtotal() }} 元</p>
+        <p>computed: 總金額: 共 {{ computedSubtotal }} 元 (打{{discount*10}}折)</p>
+</div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        Vue.createApp({
+            data(){
+                return{
+                    price:100,
+                    quantity:5,
+                    discount:0.8
+                }
+            },
+            methods:{
+                methodsSubtotal:function(){
+                    return this.price*this.quantity
+                }
+            },
+            computed:{
+                computedSubtotal:function(){
+                    return this.price*this.quantity*this.discount
+                }
+            }
+        }).mount('#app')
+    </script>
+
+
+
+</body>
+
+</html>

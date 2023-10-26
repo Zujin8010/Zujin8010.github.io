@@ -44,9 +44,9 @@
             aria-label="breadcrumb">
 
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">品味美食 </a></li>
-              <li class="breadcrumb-item"><a href="#">飲品/沖泡類 </a></li>
-              <li class="breadcrumb-item"><a href="#">咖啡/咖啡豆 其他材質</a> </li>
+              <li class="breadcrumb-item"><a href="#">@item.Category </a></li>
+              <li class="breadcrumb-item"><a href="#">@item.Category </a></li>
+              <li class="breadcrumb-item"><a href="#">@item.Category</a> </li>
             </ol>
           </nav>
         </div>
@@ -82,7 +82,7 @@
 
         <div class="col-12 col-md-5">
           <div class="product-body ">
-            <h1>【台北職人】飄丿老張 中深焙 木質草本 | 刻劃靈魂的人物咖啡豆</h1>
+            <h1>@item.Title</h1>
             <div class="prodcut_reviews">
               <div class="star">
                 <i class="fa-solid fa-star"></i>
@@ -92,15 +92,15 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <div class="OneToFive">
-                <a href="#coustomer-preview">&nbsp; 5.0</a>
+                <a href="#coustomer-preview">&nbsp; @item.reviewstar</a>
               </div>
               <div class="reviewers">
-                <a href="#coustomer-preview">&nbsp; (1)</a>
+                <a href="#coustomer-preview">&nbsp; @item.review</a>
               </div>
             </div>
             <!-- <p>設計品牌共售出9件商品</p> -->
             <div class="price">
-              <span>NT$260</span>
+              <span>NT$@item.price</span>
             </div>
           </div>
           <div class="prodcut-config">
@@ -162,7 +162,7 @@
           <ul class="promo_list">
             <li>免運優惠來瞜! 新會員7天內下單 幫你付運費,最高可折運費NT$100</li>
             <li>全館滿額免運：不限運送方式寄往台灣，滿 NT$ 799 享免運 </li>
-            <span class="moreText ">
+            <span class="moreText show">
               <li>獎勵任務進行中，週週送 P Coins 簽到領取獎勵</li>
               <li>跨館合併結帳滿額免運：在指定所在地使用指定幣別下單（台灣/新台幣），不限運送方式寄往台灣，滿 NT$ 1,500 享免運</li>
               <li>獎勵任務進行中，週週送 P Coins <a href="">簽到領取獎勵</a> </li>
@@ -400,8 +400,8 @@
         <h2>購買評價</h2>
         <div class="title-line"></div>
         <div class="change-review-btn">
-          <button class="forThis">本商品評價</button>
-          <button class="forCompany">品牌所有評價</button>
+          <button class="forThis tab-button" data-target="userReview">本商品評價</button>
+          <button class="forCompany tab-button" data-target="brandReview">品牌所有評價</button>
 
         </div>
         <div class="prodcut_reviews">
@@ -422,7 +422,7 @@
 
         <div class="title-line"></div>
 
-        <div class="users-review">
+        <div class="users-review" id="usersReivew">
           <div class="users-group">
             <li class="users">
               <img src="./coffeeImage/user.svg" alt="">
@@ -455,6 +455,42 @@
               <span class="review-time">兩天前</span>
             </li>
             <li class="commend">This is Awesome</li>
+          </div>
+        </div>
+
+        <div class="users-review" id="brandReview" >
+          <div class="users-group">
+            <li class="users">
+              <img src="./coffeeImage/user.svg" alt="">
+              <span>B******1</spa>
+            </li>
+
+            <li class="review-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="review-time">一天前</span>
+            </li>
+            <li class="commend">This is Good from Brand</li>
+          </div>
+
+          <div class="title-line"></div>
+          <div class="users-group">
+            <li class="users">
+              <img src="./coffeeImage/user.svg" alt="">
+              <span>B******2</span>
+            </li>
+            <li class="review-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="review-time">兩天前</span>
+            </li>
+            <li class="commend">This is Awesome fromBrand</li>
           </div>
         </div>
 
@@ -541,7 +577,7 @@
 
 
 
-
+  <script src="Product_small.js"></script>
   <script src="https://kit.fontawesome.com/985aa319bc.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
